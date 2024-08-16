@@ -1,0 +1,97 @@
+.seo-tarif-chart{
+    background-image: url(../img/seo-tarif/price-background2.png);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 76px 76px 0 0;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    &__container{
+        .title{
+            width: fit-content;
+            font-family: "Evolventa";
+            font-size: 69px;
+            margin: auto;
+            font-weight: 700;
+            line-height: 90px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 97px;
+            span{
+                font-style: italic;
+                font-size: 69px;
+                font-weight: 700;
+                line-height: 90px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: var(--color-orange);
+            }
+        }
+        .row{
+            display: flex;
+            margin: auto;
+            max-width:  1240px;
+            align-items: center;
+            justify-content: space-between;
+
+            &--list{
+                display: flex;
+                flex-direction: column;
+                gap: 82px;
+                max-width: 530px;
+                .item{
+                    &--title{
+                        font-family: "Montserrat";
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 31px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--color-orange);
+                    }
+                    &--text{
+                        font-family: "Montserrat";
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #C1C1C1;
+                    }
+                }
+            }
+            &--chart{
+                display: flex;
+                align-items: center;
+
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .seo-tarif-chart{
+     
+        border-radius: 36px 36px 0 0;
+        &__container{
+           padding: 0 8px;
+            .title{
+            font-size: 36px;
+            width: 100%;
+            margin-bottom: 16px;
+            line-height: 44px;
+            text-align: left;
+            span{
+                font-size: 36px;
+                line-height: 44px;
+                text-align: left;
+            }
+            }
+        }
+        .row{
+            .row--chart{
+                display: none;
+            }
+        }
+    }
+}

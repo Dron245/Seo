@@ -1,0 +1,201 @@
+
+// Base
+@import "./base/base.scss";
+@import "./base/fonts";
+@import "./base/variables";
+
+// Blocks
+
+// headers
+@import "./blocks/header";
+@import "./blocks/header-top";
+@import "./blocks/header-btn";
+
+@import "./blocks/fixed";
+
+//landing
+@import "./blocks/landing/header-landing";
+@import "./blocks/landing/landing";
+@import "./blocks/landing/landing-digital";
+@import "./blocks/landing/digital-text";
+@import "./blocks/landing/landing-case";
+@import "./blocks/landing/landing-tabs";
+@import "./blocks/landing/landing-mount";
+
+// index
+@import "./blocks/offers";
+@import "./blocks/icon-plus";
+@import "./blocks/projects";
+@import "./blocks/cost";
+@import "./blocks/contact";
+@import "./blocks/map";
+@import "./blocks/feedback";
+@import "./blocks/breadcrumbs.scss";
+
+// creating
+@import "./blocks/creating";
+@import "./blocks/creating-dev";
+@import "./blocks/stages";
+@import "./blocks/stages-card";
+@import "./blocks/design";
+@import "./blocks/consult";
+@import "./blocks/customers";
+@import "./blocks/customers-card";
+@import "./blocks/price";
+@import "./blocks/chop";
+@import "./blocks/chop-two";
+
+// seo
+@import "./blocks/seo-info";
+@import "./blocks/work-order";
+
+@import "./blocks/marketing-stack";
+@import "./blocks/marketing-info";
+
+@import "./blocks/about";
+
+//portfolio
+@import "./blocks/portfolio-tags";
+@import "./blocks/portfolio-content";
+
+// footer
+@import "./blocks/footer";
+
+// case
+@import "./blocks/case/header-case";
+@import "./blocks/case/case";
+@import "./blocks/case/case-info";
+@import "./blocks/case/case-phone";
+@import "./blocks/case/case-typography";
+@import "./blocks/case/case-more";
+@import "./blocks/case/case-data";
+@import "./blocks/case/case-form";
+
+//cases-new
+@import "./blocks/cases-new/estet";
+@import "./blocks/cases-new/marestes";
+@import "./blocks/cases-new/sirius";
+
+// popup
+@import "./blocks/popup";
+@import "./blocks/popup-feedback";
+@import "./blocks/popup-status";
+
+
+// livepizza
+@import "./blocks/livepizza/livepizza";
+@import "./blocks/livepizza/livepizza-typography";
+
+// template
+@import "./blocks/template/template";
+// upakovka 
+@import "./blocks/upakovka/upakovka";
+@import "./blocks/upakovka/upakovka-brand";
+@import "./blocks/upakovka/upakovka-stats";
+@import "./blocks/upakovka/planets";
+@import "./blocks/upakovka/cases";
+@import "./blocks/upakovka/ministats";
+@import "./blocks/upakovka/sun";
+
+// development 
+@import './blocks/development/header-development';
+@import './blocks/development/development-advantages';
+@import './blocks/development/development-process';
+@import './blocks/development/development-function';
+@import './blocks/development/development-sale';
+@import './blocks/development/development-design';
+
+
+// newseo-two
+@import "./blocks/seo-new/seo-new-main";
+@import "./blocks/seo-new/seo-new-main-two";
+@import "./blocks/seo-new/seo-new-feedback";
+@import "./blocks/seo-new/seo-order";
+@import "./blocks/seo-new/seo-optimisation";
+@import "./blocks/seo-new/seo-crew";
+@import "./blocks/seo-new/seo-profit";
+@import "./blocks/seo-new/seo-term";
+@import "./blocks/seo-new/seo-term-two";
+@import "./blocks/seo-new/seo-cost";
+@import "./blocks/seo-new/seo-cost-two";
+@import "./blocks/seo-new/seo-clients";
+@import "./blocks/seo-new/seo-recal";
+@import "./blocks/seo-new/header-seo";
+@import "./blocks/seo-new/seo-audit";
+@import "./blocks/seo-new/seo-audit-two";
+@import "./blocks/seo-new/seo-niche";
+@import "./blocks/seo-new/seo-niche-two";
+@import "./blocks/seo-new/seo-form";
+@import "./blocks/seo-new/seo-messages";
+@import "./blocks/seo-new/seo-why-two";
+@import "./blocks/seo-new/seo-garanty-two";
+@import "./blocks/seo-new/seo-check";
+@import "./blocks/seo-new/seo-questions";
+
+
+@import "./blocks/seo-tarif/seo-tarif-lists";
+@import "./blocks/seo-tarif/seo-tarif-chart";
+@import "./blocks/seo-tarif/seo-tarif-main";
+@import "./blocks/seo-tarif/seo-tarif-lists-xwing";
+@import "./blocks/seo-tarif/seo-tarif-lists-trooper";
+@import "./blocks/seo-tarif/seo-tarif-lists-ufo";
+@import "./blocks/seo-tarif/seo-modal";
+
+
+//newseo 
+@import "./blocks/seo/header-newseo";
+@import './blocks/seo/forma';
+@import './blocks/seo/points';
+@import './blocks/seo/optimization';
+@import './blocks/seo/team';
+@import './blocks/seo/profit';
+@import './blocks/seo/deadlines';
+@import './blocks/seo/rate';
+@import './blocks/seo/clients';
+//marestes
+@import "./blocks/marestes/marestes";
+@import "./blocks/marestes/_marestes-typography";
+
+//sharami 
+@import "./blocks/sharami/sharami";
+@import "./blocks/sharami/sharami-typograph";
+
+//estet
+@import "./blocks/estet/estet";
+@import "./blocks/estet/estet-typography";
+
+//animation
+@import "./blocks/animation";
+@import '../../node_modules/aos/dist/aos.css';
+
+//new main
+@import "./blocks/new-main/swap";
+@import "./blocks/new-main/skills";
+@import "./blocks/new-main/facts";
+@import "./blocks/new-main/analiz";
+
+//context
+@import "./blocks/context/context-form";
+@import "./blocks/context/context-start";
+@import "./blocks/context/context-made";
+@import "./blocks/context/context-stages";
+@import "./blocks/context/context-targeting";
+@import "./blocks/context/context-clients";
+@import "./blocks/context/context-team";
+@import "./blocks/context/context-problems";
+@import "./blocks/context/context-tarify";
+
+// 404
+@import './blocks/404';
+// vendors
+@import "./vendors/swiper-js";
+
+//calculate
+@import './blocks/calculate';
+
+
+@import './andru/style.scss';
+
+//agreement
+
+@import './blocks/agreement'

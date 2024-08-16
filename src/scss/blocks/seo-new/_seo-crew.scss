@@ -1,0 +1,317 @@
+.seo-crew {
+
+    position: relative;
+    background: linear-gradient(-7.5deg, #E8E8E8 45%, #161616 45%);
+
+    padding-top: 178px;
+    padding-bottom: 69px;
+
+    &__container {
+        max-width: 1240px;
+        margin: auto;
+
+        .head {
+            position: relative;
+            max-width: 1140px;
+            margin: auto;
+            margin-bottom: 97px;
+
+            .title {
+                font-family: "Evolventa";
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 130px;
+                text-align: center;
+                color: #fff;
+            }
+
+            .img {
+                position: absolute;
+                top: -88%;
+                left: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .crew__slider {
+            .row {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                row-gap: 51px;
+
+                .block {
+                    width: 328px;
+                    background-color: #D9D9D9;
+                    padding-top: 20px;
+                    height: 530px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-radius: 40px;
+
+                    &--img {
+                        // flex: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // margin-bottom: 32px;
+                    }
+
+                    &--bottom {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+                    &--title {
+                        font-family: "Montserrat";
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 34px;
+                    }
+
+                    &--text {
+                        max-width: 288px;
+                        text-align: center;
+                    }
+
+                    a {
+                        position: relative;
+                        font-family: "Montserrat";
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 23px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--color-orange);
+                        cursor: pointer;
+                    }
+                    a:after{
+                        display: block;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+                        width: 0;/*задаём длинну линии до наведения курсора*/
+                        height: 2px; /*задаём ширину линии*/
+                        background-color: var(--color-orange); /*задаём цвет линии*/
+                        content: "";
+                        transition: width 0.3s ease-out;
+                    }
+                    a:hover:after,
+                    a:focus:after {
+                    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+                    }
+                }
+
+                &>:nth-child(1) {
+                    margin-right: auto;
+                }
+
+                &>:nth-child(3) {
+                    margin-left: auto;
+                }
+
+                &>:nth-child(2) {
+                    position: relative;
+
+                    // margin-top: 43px;
+                    &::before {
+                        position: absolute;
+                        left: -64px;
+                        // top: -86px;
+                        content: '';
+                        height: 350px;
+                        width: 1px;
+                        background-color: #fff;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        right: -64px;
+                        // top: 24px;
+                        content: '';
+                        height: 350px;
+                        width: 1px;
+                        background-color: #fff;
+                    }
+                }
+
+                &>:nth-child(4) {
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        right: -98px;
+                        top: 24px;
+                        content: '';
+                        height: 350px;
+                        width: 1px;
+                        background-color: #161616;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:760px) {
+    .seo-crew {
+        &__container {
+            padding: 0 20px;
+
+            // overflow: hidden;
+            .head {
+                position: relative;
+                max-width: 100%;
+                margin: auto;
+                margin-bottom: 24px;
+
+                .title {
+                    font-family: "Evolventa";
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 46px;
+                    text-align: left;
+                }
+
+                .img {
+                    position: absolute;
+                    top: -36px;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 258px;
+                }
+            }
+
+            .crew__slider {
+                position: relative;
+                overflow: hidden;
+                height: 600px;
+
+                .swiper-pagination {
+                    width: 100%;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 10px;
+
+                    // background-color: red;
+                    .swiper-pagination-bullet {
+                        color: var(--color-orange);
+                        background: var(--color-orange);
+                    }
+                }
+
+                .row {
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    row-gap: 51px;
+
+                    .block {
+                        width: 100%;
+                        background-color: #D9D9D9;
+                        padding-top: 10px;
+                        height: 550px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 40px;
+
+                        &--img {
+                            display: flex;
+                            // flex: auto;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 32px;
+                        }
+
+                        &--title {
+                            font-family: "Montserrat";
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 34px;
+                            margin-bottom: 17px;
+                        }
+
+                        &--text {
+                            max-width: 272px;
+                            text-align: center;
+                        }
+                        &--bottom {
+                            flex: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                    }
+                    
+                    &>:nth-child(1) {
+                        margin-right: unset;
+                    }
+
+                    &>:nth-child(3) {
+                        margin-left: auto;
+                    }
+
+                    &>:nth-child(2) {
+                        position: relative;
+                        margin-top: 0;
+
+                        &::before {
+                            display: none;
+                            position: absolute;
+                            left: -64px;
+                            top: -86px;
+                            content: '';
+                            height: 350px;
+                            width: 1px;
+                            background-color: #161616;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            display: none;
+                            right: -64px;
+                            top: 24px;
+                            content: '';
+                            height: 350px;
+                            width: 1px;
+                            background-color: #161616;
+                        }
+                    }
+
+                    &>:nth-child(4) {
+                        position: relative;
+
+                        &::after {
+                            display: none;
+                            position: absolute;
+                            right: -98px;
+                            top: 24px;
+                            content: '';
+                            height: 350px;
+                            width: 1px;
+                            background-color: #161616;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1335 @@
+<?php
+/**
+ * Стандартный шаблон кейса.
+ *
+ * @var umiTemplaterPHP|ViewPhpExtension|DemomarketPhpExtension|BasicPhpExtension $this
+ * @var array $variables
+ * @var umiHierarchyElement $page
+ */
+
+$page = $variables['page'];
+$settings = $this->getSettingsContainer();
+$phone = $settings->getValue('phone');
+$email = $settings->getValue('contacts-email');
+
+$urlPage = $this->macros('content', 'get_page_url', [($page->getId())]);
+
+?>
+<main class="creating">
+    <section class="seo-main">
+        <div class="seo-main--background" data-aos="zoom-out-right">
+
+
+            <div class="seo-main__container container">
+                <div class="title">
+                    ПОЛУЧИТЕ БЕСПЛАТНЫЙ ОРГАНИЧЕСКИЙ ТРАФИК С ПОМОЩЬЮ <span>SEO-ПРОДВИЖЕНИЯ</span>
+                    <div class="img">
+                        <img src="/templates/demomarket/img/new-seo/rebild/frame1.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btns">
+                        <a href="https://webenergy-it.ru/cases/" class="btn-cases seo-btn">Кейсы</a>
+                        <a target="_blank" href="<?= $this->getDomainUrl() ?>seo-presentation.pdf""
+                        class="btn-wiew seo-btn">
+                        <div class="text">Смотреть презентацию</div>
+                        <div class="img"><img src="/templates/demomarket/img/new-seo/Arrow_main_rigth.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bottom--title">
+                        Что дает SEO-продвижение
+                    </div>
+                    <div class="bottom--row">
+                        <div class="block">
+                            <div class="img">
+                                <img src="/templates/demomarket/img/new-seo/rebild/growthgraph1.png" alt="">
+                                <img class="eclips" src="/templates/demomarket/img/new-seo/rebild/Ellipse24.png" alt="">
+                            </div>
+                            <div class="name">
+                                Увеличение посещаемости вашего сайта
+                            </div>
+                            <div class="text">
+                                SEO-оптимизация поможет вашему сайту занять высокие позиции
+                                в поисковых системах, что приведет
+                                к увеличению числа посетителей
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img">
+                                <img src="/templates/demomarket/img/new-seo/rebild/useranalysis1.png" alt="">
+                                <img class="eclips" src="/templates/demomarket/img/new-seo/rebild/Ellipse24.png" alt="">
+                            </div>
+                            <div class="name">
+                                Привлечение целевой аудитории на ваш сайт
+                            </div>
+                            <div class="text">
+                                Благодаря правильной оптимизации ваш сайт будет показан именно вашей целевой аудитории,
+                                что увеличит конверсию
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img">
+                                <img src="/templates/demomarket/img/new-seo/rebild/webanalysis1.png" alt="">
+                                <img class="eclips" src="/templates/demomarket/img/new-seo/rebild/Ellipse24.png" alt="">
+                            </div>
+                            <div class="name">
+                                Улучшение поведенческих факторов пользователей
+                            </div>
+                            <div class="text">
+                                SEO-оптимизация включает в себя работу над контентом, архитектурой сайта, скоростью
+                                загрузки и другими факторами, что сделает ваш сайт более удобным и интересным для
+                                пользователей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seo-audit">
+        <div class="seo-audit__container container" data-aos="zoom-out-right">
+            <div class="seo-audit__container__title">
+                ПРОВЕДЕМ <span>БЕСПЛАТНЫЙ SEO-АУДИТ САЙТА</span> ПО 100+ ПАРАМЕТРАМ И ПОМОЖЕМ ЗАНЯТЬ ЛИДИРУЮЩИЕ ПОЗИЦИИ
+                В ПОИСКОВЫХ СИСТЕМАХ
+            </div>
+            <div class="seo-audit__container__row">
+                <div class="block">
+                    <div class="block__title">
+                        ЧТО ВЫ ПОЛУЧИТЕ:
+                    </div>
+                    <ul class="block__list">
+                        <li>Технический анализ</li>
+                        <li>Конкурентный анализ</li>
+                        <li>Анализ конверсионности сайта</li>
+                        <li>Подробный план действий по улучшению SEO показателей</li>
+                    </ul>
+                    <div class="button open-modal-btn" data-name-block="Заказать сео аудит кнопка, страница сео">
+                        Заказать SEO аудит
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/templates/demomarket/img/new-seo/rebild/monitor.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seo-order">
+        <div class="seo-order__container container" data-aos="zoom-out-right">
+            <div class="title">
+                <div class="title-up">
+                    Основные этапы
+                </div>
+                <!-- <div class="title-main">
+                    Порядок работы
+                </div> -->
+            </div>
+            <div class="order-slider swiper-container">
+                <div class="order-slider__wrapper swiper-wrapper">
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/1.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                1
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Полный аудит сайта</div>
+                        <div class="slider-text">
+                            На этом этапе наши специалисты получают доступ
+                            к вашему сайту и проводят расширенный анализ текущего состояния его технических параметров,
+                            контента. Это позволяет выявить слабые места сайта
+                            и определить стратегию дальнейшей работы
+                        </div>
+
+                    </div>
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/2.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                2
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Сбор семантического ядра</div>
+                        <div class="slider-text">
+                            Исследование ключевых слов и запросов, которые наиболее релевантны для вашего сайта и его
+                            тематики. Это включает в себя анализ поисковых запросов, конкурентов, обсуждений в
+                            социальных сетях и т.д.
+                        </div>
+
+                    </div>
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/3.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                3
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Планирование контента</div>
+                        <div class="slider-text">
+                            Создание плана контента на основе собранного семантического ядра, включая определение
+                            основных
+                            тем и ключевых слов для каждой страницы сайта
+                        </div>
+
+                    </div>
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/4.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                4
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Коррекция структуры сайта</div>
+                        <div class="slider-text">
+                            Пересмотр и оптимизация структуры сайта на основе собранного семантического ядра, включая
+                            создание
+                            новых страниц, перераспределение контента, удаление дублирующихся страниц и т.д.
+                        </div>
+
+                    </div>
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/5.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                5
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Техническая оптимизация</div>
+                        <div class="slider-text">
+                            Проведение технических изменений на сайте
+                            для улучшения его видимости для поисковых систем, включая улучшение скорости загрузки,
+                            исправление ошибок, адаптацию для мобильных устройств и т.д.
+                        </div>
+
+                    </div>
+                    <div class="order-slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/slider/6.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="row__count">
+                                6
+                            </div>
+                            <div class="row__line">
+
+                            </div>
+                        </div>
+                        <div class="slider-title">Мониторинг и анализ</div>
+                        <div class="slider-text">
+                            Отслеживание изменений в позициях сайта в поисковых системах, анализ эффективности
+                            проведенной оптимизации и корректировка стратегии при необходимости
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle">
+                По итогам работ вы получаете<span> улучшение позиций</span> своего сайта <br class="desctop">
+                в поисковых системах, <span>увеличение трафика</span> и, как следствие,<br class="desctop"> <span>увеличение конверсии и прибыли</span>
+
+
+            </div>
+            <!-- <div class="numbers">
+                <div class="vector-min"></div>
+                <div class="circle">1</div>
+                <div class="vector"></div>
+                <div class="circle">2</div>
+                <div class="vector"></div>
+                <div class="circle">3</div>
+                <div class="vector-min"></div>
+            </div> -->
+            <!-- <div class="order-slider">
+            <div class="row">
+                <div class="block">
+                    <div class="info">
+                        <div class="info__title">
+                            <div class="img">
+                                <img src="/templates/demomarket/img/new-seo/order of work/Frame_1.png" alt="">
+                            </div>
+                           <p> Полный <span>аудит сайта</span></p>
+                        </div>
+                        <div class="info__content">
+                            Во время аудита сайта проводится анализ сильных
+    и слабых сторон, подбор конкурентов, занимающих лидирующие позиции в поисковой выдаче в тематике.
+                        </div>
+                    </div>
+                </div>
+                <div class="block"> -->
+            <!-- <img src="/templates/demomarket/img/new-seo/order of work/Frame2.png" alt=""> -->
+            <!-- <div class="info">
+                <div class="img">
+                    <img src="/templates/demomarket/img/new-seo/order of work/Frame_2.png" alt="">
+                </div>
+                <div class="info__title">
+                  <p>  Сбор семантического ядра 
+                    <span> и&nbsp;коррекция структуры сайта</span> </p>
+                </div>
+                <div class="info__content">
+                    - Сбор и кластеризация запросов <br>
+                    - Распределение собранных запросов по сайту </br>
+                    - Расширение семантического ядра <br>
+                </div>
+            </div>
+        </div>
+        <div class="block"> -->
+            <!-- <img class="scale" src="/templates/demomarket/img/new-seo/order of work/Frame3.png" alt=""> -->
+            <!-- <div class="info">
+                <div class="img">
+                    <img src="/templates/demomarket/img/new-seo/order of work/Frame_3.png" alt="">
+                </div>
+                <div class="info__title">
+                   <p> Создание <span>уникального контента</span></p>
+                </div>
+                <div class="info__content">Создаем тексты на сайт, мета-теги, оптимизируем изображения, убираем дубликаты страниц,
+                    дорабатываем все содержимое сайта
+                </div>
+            </div>
+        </div> -->
+            <!--             
+                            <div class="block">
+                                <img src="/templates/demomarket/img/new-seo/frames/Slice2.png" alt="">
+                                <div class="info">
+                                    <div class="info__title">
+                                        <div class="img">
+                                            <img src="/templates/demomarket/img/new-seo/order of work/Frame_1.png" alt="">
+                                        </div>
+                                       <p> Полный <span>аудит сайта</span></p>
+                                    </div>
+                                    <div class="info__content">
+                                        Во время аудита сайта проводится анализ сильных
+                и слабых сторон, подбор конкурентов, занимающих лидирующие позиции в поисковой выдаче в тематике.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <img src="/templates/demomarket/img/new-seo/order of work/Frame2.png" alt="">
+                                <div class="info">
+                                    <div class="img">
+                                        <img src="/templates/demomarket/img/new-seo/order of work/Frame_2.png" alt="">
+                                    </div>
+                                    <div class="info__title">
+                                      <p>  Сбор семантического ядра 
+                                        <span> и&nbsp;коррекция структуры сайта</span> </p>
+                                    </div>
+                                    <div class="info__content">
+                                        Во время аудита сайта проводится анализ сильных
+                и слабых сторон, подбор конкурентов, занимающих лидирующие позиции в поисковой выдаче в тематике.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <img class="scale" src="/templates/demomarket/img/new-seo/order of work/Frame3.png" alt="">
+                                <div class="info">
+                                    <div class="img">
+                                        <img src="/templates/demomarket/img/new-seo/order of work/Frame_3.png" alt="">
+                                    </div>
+                                    <div class="info__title">
+                                       <p> Создание <span>уникального контента</span></p>
+                                    </div>
+                                    <div class="info__content">
+                                        Во время аудита сайта проводится анализ сильных
+                и слабых сторон, подбор конкурентов, занимающих лидирующие позиции в поисковой выдаче в тематике.
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        
+                            -->
+
+            <!-- </div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        </div>
+    </section>
+
+
+    <section class="seo-crew">
+        <div class="seo-crew__container"  data-aos="flip-left">
+            <div class="head">
+                <div class="title">ЦЕЛАЯ КОМАНДА</div>
+                <div class="img">
+                    <img src="/templates/demomarket/img/new-seo/optimiz/stuff/Frame 336031.png" alt="">
+                </div>
+            </div>
+            <div class="crew__slider">
+                <div class="row">
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/optimiz/stuff/project-men.png" alt="">
+                        </div>
+                        <div class="block--bottom">
+                            <div class="block--title">
+                                Проект-менеджер
+                            </div>
+                            <div class="block--text">
+                                Руководит командой, управляет сроками, общается с заказчиком, решает возникающие
+                                проблемы
+                            </div>
+                            <a class="open-modal-btn" data-name-block="Связаться с ПМом, страница сео">Связаться с Project-manager</a>
+                        </div>
+
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/optimiz/stuff/programmer.png" alt="">
+                        </div>
+                        <div class="block--bottom">
+                            <div class="block--title">
+                                Программист
+                            </div>
+                            <div class="block--text">
+                                Работает с кодом сайта
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/optimiz/stuff/marketing.png" alt="">
+                        </div>
+                        <div class="block--bottom">
+                            <div class="block--title">
+                                Маркетолог
+                            </div>
+                            <div class="block--text">
+                                Анализирует нишу и конкурентов для выявления сильных и слабых сторон вашего
+                                продукта/услуги
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/optimiz/stuff/seo.png" alt="">
+                        </div>
+                        <div class="block--bottom">
+                            <div class="block--title">
+                                SEO-специалист
+                            </div>
+                            <div class="block--text">
+                                Улучшает/оптимизирует сайт, чтобы он быстрее попал
+                                в органическую выдачу,
+                                а также делает сайт более удобным для пользователей, что увеличивает продажи
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/optimiz/stuff/content.png" alt="">
+                        </div>
+                        <div class="block--bottom">
+                            <div class="block--title">
+                                Контент-менеджер
+                            </div>
+                            <div class="block--text">
+                                Создает уникальный контент
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="seo-profit">
+        <div class="seo-profit__container" data-aos="zoom-out-right">
+            <div class="title">
+                ЧТО ВЫ ПОЛУЧИТЕ <span>ОТ SEO-ПРОДВИЖЕНИЯ?</span>
+
+            </div>
+            <!-- <div class="block-top">
+                <div class="block-top--title">
+                    Пять частых — <span>НО</span> , мешающие вашему бизнесу
+                </div>
+                <ul class="block-top--list">
+                    <li><p>Продвигают ваш сайт, но <span>нет результата</span></p></li>
+                    <li><p>Заявки с SEO продвижения есть, но они <span>не окупаются</span> </p></li>
+                    <li><p>Хотите разобраться в SEO, но <span>нет на это времени</span></p></li>
+                    <li><p>Есть посещаемость, но <span>нет звонков</span></p></li>
+                    <li><p>Есть сайт , но туда <span>никто не заходит</span></p></li>
+                </ul>
+            </div> -->
+
+
+            <div class="block-bottom">
+                <!-- <div class="block-bottom--title">
+                    Что вы получите, обратившись в нашу компанию?
+                </div> -->
+                <!-- <div class="block-bottom--img">
+                    <img src="/templates/demomarket/img/new-seo/profit/table.png" alt="">
+                </div> -->
+                <div class="block-bottom--list">
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Увеличение посещаемости сайта</div>
+                            <div class="list-text">
+                                Путем оптимизации контента и технических параметров сайта SEO помогает привлечь больше
+                                органического трафика
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Увеличение конверсии</div>
+                            <div class="list-text">
+                                Поскольку посетители приходят на сайт через поисковые запросы, выше вероятность того,
+                                что они будут заинтересованы в продуктах или услугах компании и совершат покупку
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Улучшение репутации</div>
+                            <div class="list-text">
+                                Высокие позиции в поисковой выдаче создают впечатление
+                                о надежности и авторитетности компании в глазах ваших клиентов
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Снижение стоимости привлечения клиентов</div>
+                            <div class="list-text">
+                                Органический трафик из поисковых систем стоит дешевле, чем трафик из других каналов
+                                (например, в сравнении с контекстной рекламой)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Долгосрочные результаты</div>
+                            <div class="list-text">
+                                Хорошо продуманное и качественное SEO-продвижение позволяет получить стабильный трафик
+                                на долгосрочной основе
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-bottom--list__row">
+                        <div class="check">
+                            <img src="/templates/demomarket/img/new-seo/rebild/Vector.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="list-title">Конкурентное преимущество</div>
+                            <div class="list-text">
+                                Компания, чей сайт занимает высокие позиции в поисковой выдаче, имеет преимущество над
+                                конкурентами, что особенно важно
+                                в насыщенных сферах рынка
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="seo-term">
+        <div class="head">
+
+        </div>
+        <div class="seo-term__container" data-aos="zoom-out-right">
+            <div class="title">
+                ПРИМЕРНЫЕ <span>СРОКИ</span> ПРОДВИЖЕНИЯ САЙТА
+            </div>
+            <div class="term-slider">
+                <div class="column">
+                    <div class="row">
+                        <div class="block">
+                            <div class="block--title">
+                                <span>1</span> месяц
+                            </div>
+                            <div class="block--content">
+                                Проводим полный аудит сайта. Анализируем рыночную нишу, конкурентов, определяем точки
+                                роста и долгосрочную стратегию продвижения. Собираем поисковые запросы, соответствующие
+                                Вашему бизнесу и способные привести клиентов
+                            </div>
+                            <!-- <div class="block--bottom">
+                                Результат получаем со 2-3 месяца
+                            </div> -->
+                        </div>
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/2.png" alt="">
+                        </div>
+                        <div class="block">
+                            <div class="block--title">
+                                <span> 1-3</span> месяца
+                            </div>
+                            <div class="block--content">
+                                Устраняем технические ошибки на сайте, мешающие индексации и негативно влияющие на рост
+                                позиций и трафика. Прорабатываем структуру сайта, навигации, подготавливаем тексты,
+                                настраиваем внутреннюю перелинковку. Оптимизируем интерфейс
+                            </div>
+                            <div class="block--bottom">
+                                Рост позиций и первые заявки
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="block">
+                            <div class="block--title">
+                                <span>3-6</span> месяцев
+                            </div>
+                            <div class="block--content">
+                                Работа со ссылочными факторами, повышаем траст сайта в поисковых системах. Работаем с
+                                показателями отказа и другими поведенческими факторами
+                            </div>
+                            <div class="block--bottom">
+                                Рост позиций и увеличение количества заявок
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/4.png" alt="">
+                        </div>
+                        <div class="block">
+                            <div class="block--title">
+                                <span>7</span> месяц
+                            </div>
+                            <div class="block--content">
+                                Поисковое продвижение окупается и приносит хорошую прибыль. Подключаем дополнительные
+                                каналы привлечения
+                            </div>
+                            <div class="block--bottom">
+                                Улучшаем результат
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="block">
+                            <div class="block--title">
+                                <span>8-12</span> месяцев
+                            </div>
+                            <div class="block--content">
+                                Расширяем семантическое ядро и стимулируем рост трафика
+                            </div>
+                            <div class="block--bottom">
+                                Осуществляем поддержку сайта
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <div class="seo-cost">
+        <div class="seo-cost__container" data-aos="zoom-out-right">
+            <div class="title">
+                СТОИМОСТЬ <span>ПРОДВИЖЕНИЯ</span>
+            </div>
+            <div class="cost-slider">
+                <div class="row">
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336047.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: Истребитель
+                        </div>
+                        <div class="block--cost">
+                            от 30 000 ₽
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца</br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> низкая
+                        </div>
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span></br>
+                            Молодых сайтов, небольшого магазина, информационных сайтов, сайтов-визиток
+                        </div>
+
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> </br>
+                            До 2000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Истребитель, страница сео">Выбрать этот тариф</div>
+                        <a class="block--btn"
+                           href="https://webenergy-it.ru/services/seo-promotion/tarif-istrebitel-seo1/">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336048.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: Штурмовик
+                        </div>
+                        <div class="block--cost">
+                            от 50 000 ₽
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца</br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> средняя
+                        </div>
+
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span>
+                            Сайтов компаний, интернет-магазинов; для привлечения лидов из регионов
+                        </div>
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> </br>
+                            До 3000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Штурмовик, страница сео">Выбрать этот тариф</div>
+
+                        <a class="block--btn"
+                           href="https://webenergy-it.ru/services/seo-promotion/tarif-istrebitel-seo/">
+                            Подробнее
+                        </a>
+                    </div>
+                    <!--            
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336049.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Флотилия
+                                    </div>
+                                    <div class="block--cost">
+                                        от 35 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> высокая
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        привлечение клиентов
+                    из регионов
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                        Полетели
+                                    </a>
+                                </div>
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336050.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Торговая станция
+                                    </div>
+                                    <div class="block--cost">
+                                        от 40 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> высокая
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        интернет магазинов
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                        Мы в деле
+                                    </a>
+                                </div>
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336051.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Конфедерация
+                                    </div>
+                                    <div class="block--cost">
+                                        от 70 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> средняя
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        одновременного SEO продвижения
+                    и контекстной рекламы
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                       Мы с вами
+                                    </a>
+                                </div> -->
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336052.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: НЛО
+                        </div>
+                        <div class="block--cost">
+                            от 80 000 ₽
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца</br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> высочайшая
+                        </div>
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span>
+                            Мультирегиональных проектов, крупных производителей, интернет-магазинов
+                        </div>
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> </br>
+                            До 7000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Нло, страница сео">Выбрать этот тариф</div>
+                        <a class="block--btn" href="https://webenergy-it.ru/services/seo-promotion/tarif-nlo-seo/">
+                            Подробнее
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="seo-niche">
+        <div class="seo-niche__container container" data-aos="flip-right">
+            <div class="seo-niche__container__title">
+                <span>НИШИ,</span> С КОТОРЫМИ МЫ РАБОТАЛИ
+            </div>
+            <div class="seo-niche__container__row">
+                <div class="block">
+                    <div class="block-title">
+                        Интернет-магазины
+                    </div>
+                    <div class="block-text">
+                        Развитие веб-пространства для компаний,
+                        улучшение корпоративной видимости
+                        и эффективности
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        Туризм и гостиничный бизнес
+                    </div>
+                    <div class="block-text">
+                        Продвижение туристических услуг и отелей, привлечение новых клиентов
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        Бизнес и корпоративные сайты
+                    </div>
+                    <div class="block-text">
+                        Развитие веб-пространства для компаний,
+                        улучшение корпоративной видимости
+                        и эффективности
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        Образовательные учреждения
+                    </div>
+                    <div class="block-text">
+                        Развитие онлайн-платформ и привлечение студентов в образовательные программы
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        Рестораны и кафе
+                    </div>
+                    <div class="block-text">
+                        Создание привлекательных онлайн-профилей
+                        и маркетинговых стратегий для заведений общественного питания
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        Производство и промышленность
+                    </div>
+                    <div class="block-text">
+                        Маркетинговая поддержка для компаний, занимающихся производством товаров
+                    </div>
+                </div>
+            </div>
+            <a href="https://webenergy-it.ru/cases/" class="seo-niche__container__link">
+                <div class="text">
+                    Смотреть кейсы
+                </div>
+                <div class="img">
+                    <svg width="90" height="20" viewBox="0 0 90 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M88.8193 10.9192C89.327 10.4116 89.327 9.58845 88.8193 9.08077L80.5461 0.807618C80.0385 0.299937 79.2153 0.299936 78.7077 0.807618C78.2 1.3153 78.2 2.13841 78.7077 2.6461L86.0616 10L78.7077 17.3539C78.2 17.8616 78.2 18.6847 78.7077 19.1924C79.2153 19.7001 80.0385 19.7001 80.5461 19.1924L88.8193 10.9192ZM0.800049 11.3L87.9 11.3L87.9 8.70001L0.800049 8.7L0.800049 11.3Z"
+                              fill="#161616"/>
+                    </svg>
+
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="seo-clients">
+        <div class="seo-clients__container" data-aos="zoom-out-right">
+            <div class="title">
+                НАШИ ДОВОЛЬНЫЕ <span>КЛИЕНТЫ</span>
+            </div>
+            <!-- <div class="seo-clients__container__wrapper"> -->
+            <!-- <div class="seo-clients__container__content"> -->
+            <div class="seo-slider swiper-container">
+                <div class="seo-wrapper swiper-wrapper">
+                    <div class="seo-slide swiper-slide">
+                        <div class="seo-slide--title">Estet men </div>
+                        <div class="sebtitle">Интернет магазин</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 349%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>35 500</span></div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 25%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/logo-desk 1.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">
+                                                Смотреть <br> подробнее кейс
+                                            </div>
+                                            <a target="_blank" href="https://webenergy-it.ru/cases/estet-men/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop"
+                                         src="/templates/demomarket/img/new-seo/clients/estet-main.png" alt="">
+
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/estet.png" alt="">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="seo-slide swiper-slide">
+                        <div class="seo-slide--title">MARESTES</div>
+                        <div class="sebtitle">Магазин морепродуктов</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 154%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>15 500</span></div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 30%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/marestes-logo.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">
+                                                Смотреть <br> подробнее кейс
+                                            </div>
+                                            <a target="_blank" href="https://webenergy-it.ru/cases/marestesprive/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop"
+                                         src="/templates/demomarket/img/new-seo/clients/marestes-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/marestes.png" alt="">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="seo-slide swiper-slide client-sirius">
+                        <div class="seo-slide--title">Планета СИРИУС</div>
+                        <div class="sebtitle">Магазин спецодежда одежды</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем
+                                            по 1000 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 127%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>8 000</span> до <span>110 000</span></div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 52%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/sirius-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">
+                                                Смотреть <br> подробнее кейс
+                                            </div>
+                                            <a target="_blank" href="https://webenergy-it.ru/cases/planeta-sirius/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop"
+                                         src="/templates/demomarket/img/new-seo/clients/sirius-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/sirius.png" alt="">
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="seo-messages">
+        <div class="seo-messages__container" data-aos="zoom-out-right">
+            <div class="title">
+                <span> БЛАГОДАРСТВЕННЫЕ ПИСЬМА</span> <br>
+                ОТ КЛИЕНТОВ
+            </div>
+            <div class="seo-messages__container__slider  swiper-container">
+                <div class="seo-messages__container__slider__wrapper swiper-wrapper">
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="img/new-seo/rebild/message/A4 - 2.png" alt="">
+                        </div>
+                        <a href="https://webenergy-it.ru/cases/estet-men/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z"
+                                          fill="#FD6C03"/>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="img/new-seo/rebild/message/A4 - 3.png" alt="">
+                        </div>
+                        <a href="https://webenergy-it.ru/cases/marestesprive/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z"
+                                          fill="#FD6C03"/>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="img/new-seo/rebild/message/A4 - 4.png" alt="">
+                        </div>
+                        <a href="https://webenergy-it.ru/cases/planeta-sirius/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z"
+                                          fill="#FD6C03"/>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide">
+                        <div class="img">
+                            <img src="img/new-seo/rebild/message/point.jpg" alt="">
+                        </div>
+                        <a href="https://webenergy-it.ru/cases/tochka_hraneniya/" class="case">
+                            <div class="text">Смотреть кейс</div>
+
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z"
+                                          fill="#FD6C03"/>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="seo-recal">
+        <div class="seo-recal__container container" data-aos="zoom-out-right">
+            <div class="title">
+                Готовы <span>начать?</span>
+            </div>
+            <div class="row">
+                <div class="main">
+                    <div class="subtitle">
+                        <span class="bolt">Тогда заполните форму</span>, мы с вами свяжемся и пришлем <span
+                                class="orange">бесплатный seo-аудит</span> с недочетами сайта и рекомендациями
+                        по их устранению
+                    </div>
+                    <div class="text">
+                        Или позвоните по номеру
+                    </div>
+
+                    <a href="tel:<?= $this->cleanPhoneNumber($phone) ?>"><?= $phone ?></a>
+                    <div class="gifts">
+                        <div class="gifts__row">
+                            <div class="gifts__row__content">
+                                <div class="bolt">
+                                    При оплате за 3 месяца
+                                </div>
+                                <div class="sale">
+                                    СКИДКА 10%
+                                </div>
+                            </div>
+                            <div class="gifts__row__img open-modal-btn" data-name-block="Футер подарок, сео страница">
+                                <img src="/templates/demomarket/img/new-seo/rebild/gift.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="/udata/content/formFooterWebenergy/" class="form" method="POST" novalidate>
+                    <div class="inputs">
+                        <label for="" class="label">
+                            <input type="text" name="company" placeholder="Сайт компании">
+                        </label>
+                        <label for="" class="label">
+                            <input type="text" name="name" placeholder="Имя">
+                        </label>
+                        <label for="" class="label">
+                            <input type="tel" data-phone-pattern name="phone" placeholder='Телефон'>
+                        </label>
+                        <label for="" class="label">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </label>
+                        <label class="label-checkbox rassylka">
+                            <input type="checkbox" name="rassilka" class="true-chekbox" checked>
+                            <span class="fake-checkbox"></span>
+                            <div class="info">
+                                <p class="rassylka__text">Согласен получать рассылки с новостями и спецпредложениями</p>
+                            </div>
+                        </label>
+                        <!--                        <label for="" class="label">-->
+                        <input type="hidden" name="formBlockId" value="Футер форма, сео страница">
+                        <input type="hidden" name="hidden" value="<?= $this->getDomainUrl() ?><?= $urlPage ?>">
+                        <!--                        </label>-->
+                    </div>
+                    <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                    <button type="submit" class="form-button">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="seo-form none fadeOut modal-content">
+        <form class="seo-form__container" action="/udata/content/formSeoAudit" method="POST" novalidate>
+            <div class="close">&times;</div>
+            <div class="img">
+                <img src="/templates/demomarket/img/new-seo/rebild/form/gift.png" alt="">
+            </div>
+            <div class="subtitle">
+                Чтобы вы могли оценить, какие слабые места есть у вашего сайта
+                и что мы можем для вас сделать, мы проведем <span>бесплатный аудит сайта</span>
+            </div>
+            <div class="text">
+                Оставьте свои контактные данные и мы свяжемся с вами в течение дня
+            </div>
+            <div class="inputs">
+                <label for="" class="label">
+                    <input type="text" name="company" placeholder="Сылка на ваш сайт">
+                </label>
+                <label for="" class="label">
+                    <input type="text" name="name" placeholder="Имя">
+                </label>
+                <label for="" class="label">
+                    <input type="tel" data-phone-pattern="" name="phone" placeholder="Телефон">
+                </label>
+
+                <label for="" class="label">
+                    <input type="email" name="email" placeholder="E-mail">
+                </label>
+                <label class="label-checkbox rassylka">
+                    <input type="checkbox" name="rassilka" class="true-chekbox" checked>
+                    <span class="fake-checkbox"></span>
+                    <div class="info">
+                        <p class="rassylka__text">Согласен получать рассылки с новостями и спецпредложениями</p>
+                    </div>
+                </label>
+                <!--                <label for="" class="label">-->
+                <input type="hidden" name="formBlockId">
+                <input type="hidden" name="hidden" value="<?= $this->getDomainUrl() ?><?= $urlPage ?>">
+                <!--                </label>-->
+            </div>
+            <button type="submit" class="form-button">
+                Отправить
+            </button>
+        </form>
+    </div>
+
+    <!-- <div class="tarif-gift open-modal-btn" data-name-block = "Подарок страница сео">
+        <img src="/templates/demomarket/img/seo-tarif/gift.png" alt="">
+    </div> -->
+
+</main>

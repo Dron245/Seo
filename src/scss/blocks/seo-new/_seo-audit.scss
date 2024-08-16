@@ -1,0 +1,161 @@
+.seo-audit{
+    position: relative;
+    border-radius: 76px 76px 0 0 ;
+    margin-top: -76px;
+    background-color: #E8E8E8;
+    z-index: 1;
+    overflow: hidden;
+    &__container{
+        padding-top: 130px;
+        padding-bottom: 133px;
+        &__title{
+            margin-bottom: 45px;
+            font-family: "Evolventa";
+            span{
+            font-size: 42px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 65px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: var(--color-orange);
+            }
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 65px;
+            letter-spacing: 0em;
+            text-align: center;      
+        }
+        &__row{
+            display: flex;
+            .block{
+                flex: 1;
+                &__title{
+                    font-family: "Evolventa";
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;  
+                margin-bottom: 25px;
+                } 
+                &__list{
+                    padding-left: 36px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    margin-bottom: 79px;
+                    li{
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #303030;
+                        list-style-image: url(../img/new-seo/rebild/Vector.svg);
+                        &::marker{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                .button{
+                    position: relative;
+                    z-index: 1;
+                    width: 400px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    background-color: var(--color-orange);
+                    color: #fff;
+                    border-radius: 40px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .img{
+                position: relative;
+                flex: 1;
+                transform: translateY(-20%) scale(1.2);
+             
+                // transform: scale(1.6) translateY(10%);
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .seo-audit{
+        position: relative;
+        border-radius: 36px 36px 0 0 ;
+        margin-top: -36px;
+        background-color: #E8E8E8;
+        z-index: 1;
+        &__container{
+            padding-top: 76px;
+            padding-bottom: 76px;
+            &__title{
+                margin-bottom: 45px;
+                span{
+                font-size: 36px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--color-orange);
+                }
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: left;      
+            }
+            &__row{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .block{
+                    &__title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    text-align: center;  
+                    margin-bottom: 25px;
+                    } 
+                    &__list{
+                        padding-left: 42px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 9px;
+                        margin-bottom: 79px;
+                        li{
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #303030;
+                            list-style-image: url(../img/new-seo/rebild/Vector.svg);
+                        }
+                    }
+                    .button{
+                        position: relative;
+                        z-index: 1;
+                        width: 400px;
+                        height: 60px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        background-color: var(--color-orange);
+                        color: #fff;
+                        border-radius: 40px;
+                        cursor: pointer;
+                    }
+                }
+                .img{
+                    transform: scale(1) translateY(0);
+                }
+            }
+        }
+    }
+}

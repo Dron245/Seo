@@ -1,0 +1,38 @@
+.header-development {
+  background: unset;
+  background-color: #161616;
+  &__img {
+    position: absolute;
+    right: -160px;
+    top: -130px;
+    z-index: 0;
+  }
+  &__box {
+    position: relative;
+  }
+  .header__title {
+    max-width: 740px;
+    position: relative;
+    z-index: 1;
+  }
+  .header__wrap {
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  .btn {
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-development {
+    &__img {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-top: 60px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.development-design {
+  background: #161616;
+  color: #FFFFFF;
+
+  .development-function__text {
+    max-width: 579px;
+  }
+}
+@media screen and (max-width:768px) {
+  .development-design {
+    .title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}

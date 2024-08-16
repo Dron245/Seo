@@ -1,0 +1,55 @@
+.context-team {
+background: #161616;
+color: white;
+ 
+
+  &__wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 816px;
+    justify-content: center;
+    margin: 80px auto 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 141px;
+    background: #292929;
+    border-radius: 24px;
+    width: 393px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .context-team {
+     &__item {
+      height: 180px;
+      padding: unset;
+      width: 100%;
+     }
+     &__text {
+      max-width: 110px;
+     }
+  }
+}

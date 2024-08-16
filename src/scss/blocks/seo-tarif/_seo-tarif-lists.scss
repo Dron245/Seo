@@ -1,0 +1,89 @@
+.seo-tarif-lists{
+    background-color: #E8E8E8;
+    border-radius: 76px 76px 0 0;
+    padding-bottom: 156px;
+    margin-top: -76px;
+    // .tarif-block.ufo, .tarif-block.trooper{
+    //     .tarif-gift{
+    //         display: none;
+    //     }
+    // }
+    &-columns{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+    &__container{
+        max-width: 1610px;
+        margin: auto;
+        padding-top: 60px;
+        .bread{
+            margin-bottom: 110px;
+        }
+        .breadcroumb{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            margin-bottom: 40px;
+        }
+        .title{
+            font-family: "Evolventa";
+            font-size: 90px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 117px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 146px;
+        }
+        .tarif-title{
+            position: absolute;
+            top: -110px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: auto;
+            .img{
+                position: relative;
+                width: fit-content;
+                margin: auto;
+                .img-wing{
+                    position: absolute;
+                    right: -50%;
+                    top: -30%;
+                    max-width: 648px;
+                }
+            }
+        }
+        // .tarif-gift{
+        //     position: fixed;
+        //     bottom: 100px;
+        //     right: -200px;
+        //     z-index: 100;
+        //     transition: transform ease-in-out .1s;
+        //     cursor: pointer;
+        // }
+        // .tarif-gift.active{
+        //    transform: translateX(-300px);
+        //    transition: transform ease-in-out .1s;
+        // }
+    }
+}
+@media (max-width: 768px) {
+    .seo-tarif-lists{
+        padding-bottom: 56px;
+        border-radius: 36px 36px 0 0;
+        &__container{
+            padding-top: 0;
+            .title{
+                font-family: "Evolventa";
+                font-size: 36px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 117px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-bottom: 56px;
+            }
+        }
+    }
+}

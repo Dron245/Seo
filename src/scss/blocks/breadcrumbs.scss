@@ -1,0 +1,46 @@
+.bread{
+  background-color: transparent;
+}
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+    margin: auto;
+    margin-left: 100px;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    align-items: center;
+    width: 100%;
+   
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #939EAA;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+    
+
+      &:last-child::after {
+        content: none;
+      }
+    }
+
+    li:after {
+      content: ">";
+      font-size: 14px;
+      line-height: 10px;
+      margin-left: 8px;
+      color: #939EAA;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+  .breadcrumbs {
+  display: none;
+  }
+}

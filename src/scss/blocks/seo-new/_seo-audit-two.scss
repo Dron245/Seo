@@ -1,0 +1,535 @@
+.seo-audit-two{
+    position: relative;
+    border-radius: 76px 76px 0 0 ;
+    margin-top: -76px;
+    background-color: #E8E8E8;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 200px;
+    &__container{
+        padding-top: 130px;
+        overflow: hidden;
+        padding-bottom: 150px;
+        &__title{
+            margin-bottom: 45px;
+            margin: auto;
+            font-family: "Evolventa";
+            position: relative;         
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 65px;
+            letter-spacing: 0em;
+            text-align: center;  
+            margin-bottom: 100px;   
+            max-width: 620px;
+          
+            .img{
+                position: absolute;
+                left: 120px;
+                top: 80%;
+                
+            }
+            .subtitle{
+                position: absolute;
+                right: 0;
+                top: 105%;
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+                max-width: 621px;
+            }
+            span{
+                font-size: 42px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 65px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: var(--color-orange);
+                } 
+        }
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+            margin-bottom: 40px;
+            .block{
+                background-color: #D9D9D9;
+                padding: 26px;
+                width: 100%;
+                box-sizing: border-box;
+                max-width: calc(50% - 20px);
+                border-radius: 22px;
+
+                &__title{
+                    font-family: "Evolventa";
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;  
+                margin-bottom: 12px;
+                color: var(--color-orange);
+                } 
+                &__list{
+                    padding-left: 36px;
+                    display: flex;
+                    // flex-direction: column;
+                    gap: 48px;
+                    gap: 95px;
+                    margin-bottom: 79px;
+                    margin-bottom: 93px;
+                    span{
+                        font-weight: 600;
+                    }
+                    li{
+                        flex: 1;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #303030;
+                        list-style-image: url(../img/new-seo/rebild/Vector.svg);
+                        &::marker{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                .button{
+                    position: relative;
+                    z-index: 1;
+                    width: 400px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    background-color: var(--color-orange);
+                    color: #fff;
+                    border-radius: 40px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .img{
+                position: relative;
+                flex: 1;
+                transform: translateY(-20%) scale(1.2);
+            }
+        }
+        &__form{
+            display: flex;
+            align-items: center;
+            height: 432px;
+            background-color: #D9D9D9;
+            border-radius: 22px;
+            background-image: url(../img/seo-two/audit/webenergy.png);
+            background-repeat: no-repeat;
+            background-position: 10px 100%;
+            &__img{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateY(-10%) scale(1.2);
+            }
+            &__content{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &__title{
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 57px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 26px;
+                    position: relative;
+                    .img{
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateX(50%);
+                    }
+                }
+                .label-input{
+                    width: 100%;
+                    max-width: 394px;
+                    margin-bottom: 22px;
+                    input{
+                        width: 100%;
+                        background-color: inherit;
+                        border: 1px solid #A6A5A5;
+                        padding-left: 16px;
+                        height: 49px;
+                        border-radius: 60px;
+
+                    }
+                }
+                .label-checkbox{
+                    display: flex;
+                    margin-bottom: 40px;
+                }
+                &__button{
+                    width: 100%;
+                    max-width: 392px;
+                    height: 60px;
+                    background-color: var(--color-orange);
+                    border-radius: 40px;
+                    color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                &__text{
+                    width: 100%;
+                    max-width: 392px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #5B5B5B;
+                    a{
+                        text-decoration: underline;
+                        color: #161616;
+                    }
+                }
+            }
+        }
+    }
+    .label-checkbox{
+        display: flex;
+        gap: 12px;
+        cursor: pointer;
+        .info{
+          font-size: 14px;
+          color: var(--color-black);
+          max-width: 450px;
+          p{
+            margin: 0;
+          }
+          a{
+              color: #DABCA4;
+              text-decoration: underline;
+          }
+      }
+      }
+      .true-chekbox~div {
+        font-weight: 400;
+        color: var(--color-black);
+      }
+      
+      .true-chekbox:disabled~div {
+        color: var(--color-black);
+      }
+      
+      .true-chekbox:disabled~span {
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+      }
+      
+      .true-chekbox {
+        display: none;
+      }
+      .label-checkbox input[type="checkbox"]:checked +.fake-checkbox + div {
+        color:  #a8a8a8;
+      }
+      .fake-checkbox {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        // border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        background-image: url(../img/seo-two/audit/empty-checkbox.png);
+      }
+      
+      .fake-checkbox::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        border-radius: 2px;
+        transition: 0.2s;
+        background-image: url(../img/seo-two/audit/full-check.png);
+      }
+      
+      .true-chekbox:checked+.fake-checkbox::before {
+        opacity: 1;
+      }
+}
+@media screen and (max-width: 768px) {
+    .seo-audit-two{
+        position: relative;
+        border-radius: 36px 36px 0 0 ;
+        margin-top: -36px;
+        background-color: #E8E8E8;
+        z-index: 1;
+        padding-bottom: 0;
+
+        &__container{
+            padding-top: 76px;
+            padding-bottom: 0;
+            &__title{
+                margin-bottom: 45px;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 37px;
+                .img{
+                    position: absolute;
+                    left: 0;
+                    top: 42px;
+                    width: 116px;
+                }
+                .subtitle{
+                    position: relative;
+                    right: 0;
+                    top: 105%;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    
+                    max-width: 621px;
+                }
+                span{
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--color-orange);
+                }
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: center;    
+                margin-bottom: 32px;  
+            }
+            &__row{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 12px;
+                .block{
+                    &__title{
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: center;  
+                    margin-bottom: 19px;
+                    } 
+                    &__list{
+                        padding-left: 42px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 9px;
+                        margin-bottom: 79px;
+                        li{
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #303030;
+                            list-style-image: url(../img/new-seo/rebild/Vector.svg);
+                        }
+                    }
+                    .button{
+                        position: relative;
+                        z-index: 1;
+                        width: 400px;
+                        height: 60px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        background-color: var(--color-orange);
+                        color: #fff;
+                        border-radius: 40px;
+                        cursor: pointer;
+                    }
+                }
+                .img{
+                    transform: scale(1) translateY(0);
+                }
+            }
+            &__form{
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: unset;
+                background-color: #D9D9D9;
+                border-radius: 22px;
+                background-image: url(../img/seo-two/audit/webenergy.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center 140px;
+                padding: 20px;
+                padding-bottom: 36px;
+                &__img{
+                    flex: 1;
+                    width: 248px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -100px;
+                }
+                &__content{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    &__title{
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-bottom: 14px;
+                    }
+                    .label-input{
+                        width: 100%;
+                        max-width: 100%;
+                        margin-bottom: 22px;
+                        input{
+                            box-sizing: border-box;
+                            width: 100%;
+                            background-color: inherit;
+                            border: 1px solid #A6A5A5;
+                            padding-left: 16px;
+                            height: 49px;
+                            border-radius: 60px;
+    
+                        }
+                    }
+                    .label-checkbox{
+                        display: flex;
+                        margin-bottom: 40px;
+                    }
+                    &__button{
+                        width: 100%;
+                        max-width: 392px;
+                        height: 60px;
+                        background-color: var(--color-orange);
+                        border-radius: 40px;
+                        color: #fff;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                        &:hover{
+                            opacity: .8;
+                        }
+                    }
+                    &__text{
+                        width: 100%;
+                        max-width: 392px;
+                        font-size: 10px;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #5B5B5B;
+                        a{
+                            text-decoration: underline;
+                            color: #161616;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .label-checkbox{
+        display: flex;
+        gap: 12px;
+        cursor: pointer;
+        .info{
+          font-size: 12px;
+          color: var(--color-black);
+          line-height: 18px;
+          max-width: 450px;
+          p{
+            font-size: 12px;
+            margin: 0;
+          }
+          a{
+              color: #DABCA4;
+              text-decoration: underline;
+          }
+      }
+      }
+      .true-chekbox~div {
+        font-weight: 400;
+        color: var(--color-black);
+      }
+      
+      .true-chekbox:disabled~div {
+        color: var(--color-black);
+      }
+      
+      .true-chekbox:disabled~span {
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+      }
+      
+      .true-chekbox {
+        display: none;
+      }
+      .label-checkbox input[type="checkbox"]:checked +.fake-checkbox + div {
+        color:  #a8a8a8;
+      }
+      .fake-checkbox {
+        display: inline-block;
+        width: 100%;
+        min-width: 20px;
+        height: 20px;
+        background-color: #fff;
+        // border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        background-image: url(../img/seo-two/audit/empty-checkbox.png);
+      }
+      
+      .fake-checkbox::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        border-radius: 2px;
+        transition: 0.2s;
+        background-image: url(../img/seo-two/audit/full-check.png);
+      }
+      
+      .true-chekbox:checked+.fake-checkbox::before {
+        opacity: 1;
+      }
+}

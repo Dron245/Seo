@@ -1,0 +1,41 @@
+header:has(.seo-main-two){
+    
+}
+.header.header__seo{
+    max-width: 100vw;
+    overflow: visible !important;
+    margin-bottom: -200px;
+}
+body:has(.seo-main-two){
+   
+    .header.header__seo{
+        max-width: 100vw;
+        overflow: visible !important;
+        margin-bottom: -40px;
+    }
+}
+.header__seo{
+    margin: auto;
+    height: fit-content;
+    background-image: none;
+    background-color: transparent;
+    .header-top__contaner{
+        margin: auto;
+        background-color: transparent;
+        z-index: 1050;
+    }
+    .header-landing{
+        display: none !important;
+    }
+    .header-nav--active{
+        max-width: 100vw;
+        z-index: 1000;
+        overflow-x: hidden;
+    }
+    .fixed{
+        width: 100%;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: 0;
+    }
+}

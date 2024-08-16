@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сайт-визитка"
+})
+
+<body>
+  @@include('html/development/header-development.html', {
+  "development-title": "сайта-визитки",
+  "development-name": "Сайт-визитка",
+  "development-about": " — оптимальный вариант для бизнеса и стартапов. Сайт из одной или нескольких страниц содержащий основную информацию о компании.",
+  "development-header": "@img/development/vizitka.png"
+  })
+  <main class="services">
+    @@include('html/development/development-advantages.html')
+    @@include('html/development/development-process.html')
+    @@include('html/development/development-design.html', {
+      "development-design" : "сайта",
+    })
+    @@include('html/development/development-sale.html', {
+    "development-sale": "@img/development/upiter.png",
+    })
+    @@include('html/estet/estet-form.html')
+    @@include('html/seo/clients.html')
+    @@include('html/contact.html', {})
+  </main>
+  @@include('html/footer.html', {})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

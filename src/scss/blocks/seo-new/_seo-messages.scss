@@ -1,0 +1,146 @@
+.seo-messages{
+    position: relative;
+    background-color: #3C3B3B;
+    border-radius: 76px 76px 0 0;
+    margin-top: -76px;
+    padding-top: 72px;
+    padding-bottom: 200px;
+    z-index: 3;
+    overflow: hidden;
+    &__container{
+        max-width: 1610px;
+        margin: auto;
+        .title{
+            font-family: "Evolventa";
+            font-size: 69px;
+            font-weight: 700;
+            line-height: 90px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 62px;
+            span{
+                font-style: italic;
+                color: #fff;
+            }
+            
+        }
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 46px;
+        }
+        &__slider{
+            max-width: 1610px;
+            // margin-left: auto;
+            transform: translateX(190px);
+            overflow: hidden;
+            &__wrapper{
+                width: 100%;
+                &__item{
+                    max-width: 480px;
+                }
+            }
+        }
+        .case{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 22px;
+            .text{
+                font-family: "Montserrat";
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 36px;
+               
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--color-orange);
+            }
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:hover{
+               opacity: 0.8; 
+            }
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    .seo-messages{
+        position: relative;
+        background-color: #3C3B3B;
+        border-radius: 36px 36px 0 0;
+        margin-top: -36px;
+        padding: 0 20px;
+        padding-top: 72px;
+        padding-bottom: 100px;
+        z-index: 3;
+        overflow: hidden;
+        &__container{
+            max-width: 1610px;
+            margin: auto;
+            .title{
+                font-family: "Evolventa";
+                font-size: 36px;
+                font-weight: 700;
+                // max-width: 90%;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 42px;
+                word-wrap: break-word;
+                span{
+                    font-style: italic;
+                    color: #fff;
+                }
+                
+            }
+            img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 46px;
+            }
+            &__slider{
+                max-width: 1610px;
+                // margin-left: auto;
+                transform: unset;
+                overflow: hidden;
+                &__wrapper{
+                    width: 100%;
+                    &__item{
+                        max-width: 480px;
+                    }
+                }
+            }
+            .case{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 22px;
+                .text{
+                    font-family: "Montserrat";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 36px;
+                   
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--color-orange);
+                }
+                .img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                }
+                &:hover{
+                   opacity: 0.8; 
+                }
+            }
+        }
+    }
+}

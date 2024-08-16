@@ -1,0 +1,1397 @@
+<?php
+/**
+ * Стандартный шаблон кейса.
+ *
+ * @var umiTemplaterPHP|ViewPhpExtension|DemomarketPhpExtension|BasicPhpExtension $this
+ * @var array $variables
+ * @var umiHierarchyElement $page
+ */
+
+$page = $variables['page'];
+$settings = $this->getSettingsContainer();
+$phone = $settings->getValue('phone');
+$email = $settings->getValue('contacts-email');
+
+$urlPage = $this->macros('content', 'get_page_url', [($page->getId())]);
+
+?>
+<main class="creating">
+    <section class="seo-main-two">
+        <div class="seo-main-two--background aos-init aos-animate" data-aos="zoom-out-right">
+            <div class="seo-main-two__container container">
+                <div class="title">
+                    УВЕЛИЧЬТЕ ПОТОК ГОРЯЧИХ КЛИЕНТОВ ПРИ ПОМОЩИ <span>SEO-ПРОДВИЖЕНИЯ</span>
+                    <div class="img">
+                        <img src="/templates/demomarket/img/seo-two/main/table.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row__block">
+                        <div class="row__block__title">
+                            Плюсы
+                        </div>
+                        <div class="row__block__slider slider-one swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <div class="row__block__content">
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            0 расходов
+                                            на рекламу
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51268 10.976" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.677 0.911636L11.7551 21.4751" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        Если захотите её запустить,
+                                        то она будет дешевле
+                                    </div>
+                                </div>
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            Долгосрочные
+                                            результаты
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51268 10.976" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.677 0.911636L11.7551 21.4751" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        Даже через год, без вложений,
+                                        вы будете получать заказы
+                                    </div>
+                                </div>
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            Доверие аудитории
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51268 10.976" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.677 0.911636L11.7551 21.4751" stroke="#161616" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        Прогреваете аудиторию
+                                        за счет публикации контента
+                                        от 2 раз в неделю
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row__block">
+                        <div class="row__block__title">
+                            Минусы
+                        </div>
+                        <div class="row__block__slider slider-two swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <div class="row__block__content">
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            Минимальный срок окупаемости вложений
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51267 10.976" stroke="#E8E8E8" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        = 3 месяца
+                                    </div>
+                                </div>
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            Трудоемкость
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51267 10.976" stroke="#E8E8E8" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        100+ факторов продвижения
+                                        нужно учитывать в работе
+                                    </div>
+                                </div>
+                                <div class="row__block__content--item">
+                                    <div class="row__block__content--item--top">
+                                        <div class="title">
+                                            Квалификация команды
+                                        </div>
+                                        <div class="img">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.0762 11.0541L1.51267 10.976" stroke="#E8E8E8" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="row__block__content--item--bottom">
+                                        Среди всего обилия команд
+                                        на рынке, стоящих единицы!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row--subtitle">
+                        <p>Мы за <span>честность и доверие</span> с клиентами!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seo-audit-two">
+        <div class="seo-audit-two__container container aos-init" data-aos="zoom-out-right">
+            <div class="seo-audit-two__container__title">
+                ГОТОВЫ ПРОДЕМОНСТРИРОВАТЬ  <span>ЭКСПЕРТНОСТЬ</span> И ПРОВЕСТИ <span>АУДИТ ВАШЕГО САЙТА</span>
+                <div class="img">
+                    <img src="/templates/demomarket/img/seo-two/audit/table.png" alt="">
+                </div>
+                <!-- <div class="subtitle ">
+                    Будем искренни до нашего знакомства - не совсем бесплатно, заложим в дальнейшие работы и размажем по всему договору
+                </div> -->
+            </div>
+            <div class="seo-audit-two__container__row">
+                <div class="block">
+                    <div class="block__title">
+                        ПО РЕЗУЛЬТАТАМ ВЫ ПОЛУЧИТЕ:
+                    </div>
+                    <ul class="block__list">
+                        <li><span>5 видов аудита:</span>  технический, внутренней оптимизации, внешней оптимизации, трафика, конкуренции</li>
+                        <li><span>SWOT-анализ</span>  сильных и слабых сторон сайта</li>
+                        <li><span>План действий</span> по устранению ошибок и неисправностей, которые обнаружим</li>
+
+                    </ul>
+                </div>
+                <!-- <div class="img">
+                    <img src="/templates/demomarket/img/new-seo/rebild/monitor2.png" alt=""> -->
+                <!-- <img class="eclipse" src="/templates/demomarket/img/new-seo/rebild/eclips-monitor.png" alt=""> -->
+                <!-- </div> -->
+            </div>
+            <form action="/udata/content/formSeoTwoAudit" method="POST" novalidate class="seo-audit-two__container__form">
+                <div class="seo-audit-two__container__form__img">
+                    <img src="/templates/demomarket/img/seo-two/correction/audit.png" alt="">
+                </div>
+                <div class="seo-audit-two__container__form__content">
+                    <div class="seo-audit-two__container__form__content__title">
+                        Закажите аудит сайта
+                    </div>
+                    <label class="label-input">
+                        <input class="seo-audit-two__container__form__content__input"
+                               type="tel" data-phone-pattern=""
+                               placeholder="Введите ваш номер телефона"
+                               name="phoneAudit">
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="vstrecha" class="true-chekbox">
+                        <span class="fake-checkbox"></span>
+                        <div class="info">
+                            <p>Нужна встреча для демонстрации результатов аудита</p>
+                        </div>
+                    </label>
+                    <button type="submit" class="seo-audit-two__container__form__content__button">
+                        Заказать
+                    </button>
+                    <div class="seo-audit-two__container__form__content__text">
+                        Нажимая кнопку «Заказать», Вы соглашаетесь
+                        <a href="/politika-konfidencial-nosti">с Политикой конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="seo-why-two">
+        <div class="seo-why-two__container container aos-init" data-aos="zoom-out-right">
+            <div class="seo-why-two__container__title">
+                <span>ЗАЧЕМ</span>  БИЗНЕСУ SEO-ПРОДВИЖЕНИЕ
+            </div>
+            <div class="seo-why-two__container__content">
+                <div class="monitor">
+                    <img src="/templates/demomarket/img/seo-two/why/monitor.png" alt="">
+                </div>
+                <div class="description">
+                    <div class="list">
+                        <div class="list__row">
+                            <div class="list__row__count">
+                                1
+                            </div>
+                            <div class="list__row__text">
+                                Рост количества посетителей сайта и заказов
+                            </div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__row__count">
+                                2
+                            </div>
+                            <div class="list__row__text">
+                                Улучшение репутации
+                                и пользовательского опыта
+                            </div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__row__count">
+                                3
+                            </div>
+                            <div class="list__row__text">
+                            Снижение стоимости привлечения клиентов и долгосрочный результат
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finger">
+                        <img src="/templates/demomarket/img/seo-two/why/finger.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="seo-term-two">
+
+        <div class="seo-term-two__container aos-init" data-aos="zoom-out-right">
+            <div class="title">
+                <span>ЧТО</span> ВХОДИТ В УСЛУГУ SEO-ПРОДВИЖЕНИЕ
+
+            </div>
+            <div class="term-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="column">
+                    <div class="row">
+                        <div class="block">
+                            <div class="block--title">
+                                <span>1</span> месяц
+                            </div>
+                            <div class="block--content">
+                            Проводим полный аудит сайта. Анализируем нишу, конкурентов, продукты-аналоги. Определяем точки роста и формируем стратегию продвижения на 6 месяцев, согласовываем ее с вами. Собираем поисковые запросы, далее «Семантическое ядро» или «Ядро». Подготавливаем сайт к продвижению. Формируем отчет для вас.<!-- <div class="block--bottom">
+                        Результат получаем со 2-3 месяца
+                    </div> -->
+                            </div>
+                            <div class="block--subtitle">
+                                Результат
+                            </div>
+                            <div class="block--bottom">
+                                Cтратегия продвижения на 6 месяцев с расчетом прироста
+                                посетителей на сайт
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/term/2.png" alt="">
+                        </div>
+                        <div class="block">
+                            <div class="block--title">
+                                <span> 2-3</span> месяц
+                            </div>
+                            <div class="block--content">Устраняем технические ошибки на сайте, которые мешают обходу поискового робота
+                                и негативно влияют на позиции сайта. Формируем структуру сайта, упрощаем навигацию для посетителей, создаем тексты. Формируем отчет для вас.</div>
+                            <div class="block--subtitle">
+                                Результат
+                            </div>
+                            <div class="block--bottom">
+                            Первые заявки, рост позиции в Яндекс и Google до топ-20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="block">
+                            <div class="block--title">
+                                <span> 4</span> и далее месяцы
+                            </div>
+                            <div class="block--content">Анализируем и дорабатываем тексты, изображения, видео. Подбираем авторитетные
+                                и узнаваемые сайты с целью размещения вашего контента у них. Смотрим видео, что пользователи делают на вашем сайте, исходя из этого упрощаем им путь до заявки. Каждый месяц расширяем семантическое ядро, создаем новые ссылки на сайте
+                                и внешних ресурсах.</div>
+                            <div class="block--subtitle">
+                                Результат
+                            </div>
+                            <div class="block--bottom">
+                            Кратное увеличение заявок, достижение первых мест в поисковой выдаче, удержание позиции сайта
+                            </div>
+                        </div>
+                        <div class="img">
+                            <!-- <img src="/templates/demomarket/img/new-seo/term/3.png" alt=""> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+            </div>
+        </div>
+    </section>
+    <div class="seo-garanty-two">
+        <div class="seo-garanty-two__container container aos-init" data-aos="flip-left">
+            <div class="seo-garanty-two__container__title">
+                ВАШИ
+                <span>ГАРАНТИИ</span>
+            </div>
+            <div class="seo-garanty-two__container__content">
+                <div class="block">
+                    <div class="img">
+                        <img src="/templates/demomarket/img/seo-two/garanty/1.png" alt="">
+                    </div>
+                    <div class="text">
+                        За 5 месяцев <span>выводим в топ</span> каждый второй поисковый запрос из семантического ядра,
+                        которое согласовали на старте
+                    </div>
+                    <div class="vector">
+                        <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2013 15.9548C10.2629 16.0145 10.3248 16.0145 10.3871 15.9548C15.5266 11.0225 20.6861 6.07259 25.8658 1.10498C26.3928 0.599352 26.7805 0.290643 27.029 0.178853C28.7295 -0.585369 30.6028 1.24761 29.8143 2.87435C29.6944 3.12235 29.4236 3.44872 29.0017 3.85348C23.439 9.18923 17.877 14.5259 12.3157 19.8636C11.7719 20.3853 11.3621 20.7059 11.0862 20.8254C10.126 21.2427 9.32541 20.8659 8.61526 20.1836C6.0847 17.7505 3.55213 15.3194 1.01755 12.8902C0.584966 12.4758 0.313428 12.161 0.202938 11.9458C-0.649845 10.2824 1.35404 8.42147 3.07066 9.27628C3.27624 9.37843 3.57255 9.61326 3.9596 9.98075C5.98325 11.9011 8.06381 13.8925 10.2013 15.9548Z" fill="#161616"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="img">
+                        <img src="/templates/demomarket/img/seo-two/garanty/2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <span>Бесплатно</span>
+                        выполняем правки, которые необходимы для улучшения сайта
+                    </div>
+                    <div class="vector">
+                        <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2013 15.9548C10.2629 16.0145 10.3248 16.0145 10.3871 15.9548C15.5266 11.0225 20.6861 6.07259 25.8658 1.10498C26.3928 0.599352 26.7805 0.290643 27.029 0.178853C28.7295 -0.585369 30.6028 1.24761 29.8143 2.87435C29.6944 3.12235 29.4236 3.44872 29.0017 3.85348C23.439 9.18923 17.877 14.5259 12.3157 19.8636C11.7719 20.3853 11.3621 20.7059 11.0862 20.8254C10.126 21.2427 9.32541 20.8659 8.61526 20.1836C6.0847 17.7505 3.55213 15.3194 1.01755 12.8902C0.584966 12.4758 0.313428 12.161 0.202938 11.9458C-0.649845 10.2824 1.35404 8.42147 3.07066 9.27628C3.27624 9.37843 3.57255 9.61326 3.9596 9.98075C5.98325 11.9011 8.06381 13.8925 10.2013 15.9548Z" fill="#161616"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="img">
+                        <img src="/templates/demomarket/img/seo-two/garanty/3.png" alt="">
+                    </div>
+                    <div class="text">
+                        Над вашим проектом <span>работает команда</span> из 5 человек,
+                        40 часов в неделю
+                    </div>
+                    <div class="vector">
+                        <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2013 15.9548C10.2629 16.0145 10.3248 16.0145 10.3871 15.9548C15.5266 11.0225 20.6861 6.07259 25.8658 1.10498C26.3928 0.599352 26.7805 0.290643 27.029 0.178853C28.7295 -0.585369 30.6028 1.24761 29.8143 2.87435C29.6944 3.12235 29.4236 3.44872 29.0017 3.85348C23.439 9.18923 17.877 14.5259 12.3157 19.8636C11.7719 20.3853 11.3621 20.7059 11.0862 20.8254C10.126 21.2427 9.32541 20.8659 8.61526 20.1836C6.0847 17.7505 3.55213 15.3194 1.01755 12.8902C0.584966 12.4758 0.313428 12.161 0.202938 11.9458C-0.649845 10.2824 1.35404 8.42147 3.07066 9.27628C3.27624 9.37843 3.57255 9.61326 3.9596 9.98075C5.98325 11.9011 8.06381 13.8925 10.2013 15.9548Z" fill="#161616"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo-cost-two">
+        <div class="seo-cost-two__container aos-init" data-aos="zoom-out-right">
+            <div class="title">
+                SEO-ПРОДВИЖЕНИЕ - <span>ВЫГОДНЫЙ АКТИВ</span>
+            </div>
+            <div class="subtitle">
+                <p>Начните инвестировать от 30 тысяч рублей в месяц </p>
+                <p class="subtitle--white"> и увеличьте прибыльность вложений на 20+% в год</p>
+            </div>
+            <div class="cost-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="row">
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336047.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: Истребитель
+                        </div>
+                        <div class="block--cost">
+                            от 30 000 до 50 000 ₽
+                        </div>
+                        <div class="block--about">
+                            (прибыльность до 6% ежегодно)
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца<br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> низкая
+                        </div>
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span><br>
+                            Молодых сайтов, небольшого магазина, информационных сайтов, сайтов-визиток
+                        </div>
+
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> <br>
+                            До 2000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Истребитель, страница сео">Выбрать этот тариф</div>
+                        <a class="block--btn" href="https://webenergy-it.ru/services/seo-promotion/tarif-istrebitel-seo1/">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336048.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: Штурмовик
+                        </div>
+                        <div class="block--cost">
+                            от 50 000 до 80 000 ₽
+                        </div>
+                        <div class="block--about">
+                            (прибыльность до 10% ежегодно)
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца<br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> средняя
+                        </div>
+
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span>
+                            Сайтов компаний, интернет-магазинов; для привлечения лидов из регионов
+                        </div>
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> <br>
+                            До 3000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Штурмовик, страница сео">Выбрать этот тариф</div>
+
+                        <a class="block--btn" href="https://webenergy-it.ru/services/seo-promotion/tarif-istrebitel-seo/">
+                            Подробнее
+                        </a>
+                    </div>
+                    <!--
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336049.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Флотилия
+                                    </div>
+                                    <div class="block--cost">
+                                        от 35 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> высокая
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        привлечение клиентов
+                    из регионов
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                        Полетели
+                                    </a>
+                                </div>
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336050.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Торговая станция
+                                    </div>
+                                    <div class="block--cost">
+                                        от 40 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> высокая
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        интернет магазинов
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                        Мы в деле
+                                    </a>
+                                </div>
+                                <div class="block">
+                                    <div class="block--img">
+                                        <img src="/templates/demomarket/img/new-seo/cost/Frame 336051.png">
+                                    </div>
+                                    <div class="block--title">
+                                        Тариф: Конфедерация
+                                    </div>
+                                    <div class="block--cost">
+                                        от 70 000 ₽
+                                    </div>
+                                    <div class="block--sale">
+                                        <p>При оплате за 3 месяца</br>
+                                          <span>
+                                            СКИДКА 10%
+                                        </span></p>
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Конкуренция:</span> средняя
+                                    </div>
+                                    <div class="block--description">
+                                        <span>Тариф подходит для:</span>
+                                        одновременного SEO продвижения
+                    и контекстной рекламы
+                                    </div>
+                                    <div class="block--info">Выбрать этот тариф</div>
+                                    <a class="block--btn" href="">
+                                       Мы с вами
+                                    </a>
+                                </div> -->
+                    <div class="block">
+                        <div class="block--img">
+                            <img src="/templates/demomarket/img/new-seo/cost/Frame 336052.png">
+                        </div>
+                        <div class="block--title">
+                            Тариф: НЛО
+                        </div>
+                        <div class="block--cost">
+                            от 80 000 ₽
+                        </div>
+                        <div class="block--about">
+                            (прибыльность до 25% ежегодно)
+                        </div>
+                        <div class="block--sale">
+                            <p>При оплате за 3 месяца<br>
+                                <span>
+                        СКИДКА 10%
+                    </span></p>
+                        </div>
+                        <div class="block--description">
+                            <span>Конкуренция:</span> высочайшая
+                        </div>
+                        <div class="block--description">
+                            <span>Тариф подходит для:</span>
+                            Мультирегиональных проектов, крупных производителей, интернет-магазинов
+                        </div>
+                        <div class="block--description">
+                            <span>Сбор ядра:</span> <br>
+                            До 7000 запросов
+                        </div>
+                        <div class="block--info open-modal-btn" data-name-block="Выбрать этот тариф, тариф Нло, страница сео">Выбрать этот тариф</div>
+                        <a class="block--btn" href="https://webenergy-it.ru/services/seo-promotion/tarif-nlo-seo/">
+                            Подробнее
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="seo-niche-two">
+        <div class="seo-niche-two__container container aos-init" data-aos="flip-right">
+            <div class="seo-niche-two__container__title">
+                <span>КАК ПОЛУЧАТЬ ПРИБЫЛЬ</span> ОТ ВЛОЖЕНИЙ В SEO-ПРОДВИЖЕНИЕ
+            </div>
+            <div class="seo-niche-two__container__subtitle">
+                <p>Давайте честно!</p>
+                <p> Зарабатываете вы, зарабатываем мы.</p>
+                <p><span>Наша цель</span> - долгосрочное взаимовыгодное партнерство</p>
+            </div>
+            <form action="/udata/content/formSeoTwoAudit" method="POST" novalidate class="seo-niche-two__container__form">
+                <div class="seo-audit-two__container__form__img">
+                    <img src="/templates/demomarket/img/seo-two/correction/mobile-bottom.png" alt="">
+                </div>
+                <div class="seo-audit-two__container__form__content">
+                    <div class="seo-audit-two__container__form__content__title">
+                        Закажите аудит сайта
+                    </div>
+                    <label class="label-input">
+                        <input class="seo-audit-two__container__form__content__input"
+                               type="tel" data-phone-pattern=""
+                               placeholder="Введите ваш номер телефона"
+                               name="phoneAuditTwo">
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="vstrechaTwo" class="true-chekbox">
+                        <span class="fake-checkbox"></span>
+                        <div class="info">
+                            <p>Нужна встреча для знакомства</p>
+                        </div>
+                    </label>
+                    <button type="submit" class="seo-audit-two__container__form__content__button">
+                        Заказать
+                    </button>
+                    <div class="seo-audit-two__container__form__content__text">
+                        Нажимая кнопку «Заказать», Вы соглашаетесь
+                        <a href="/politika-konfidencial-nosti">с Политикой конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="seo-clients">
+        <div class="seo-clients__container aos-init" data-aos="zoom-out-right">
+            <div class="title">
+                НАШИ ДОВОЛЬНЫЕ <span>КЛИЕНТЫ</span>
+            </div>
+            <!-- <div class="seo-clients__container__wrapper"> -->
+            <!-- <div class="seo-clients__container__content"> -->
+            <div class="seo-slider swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="seo-wrapper swiper-wrapper" style="transform: translate3d(-3369.23px, 0px, 0px); transition-duration: 0ms;"><div class="seo-slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">MARESTES</div>
+                        <div class="sebtitle">Магазин морепродуктов</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 154%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>15 500</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 30%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/marestes-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/marestesprive/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/marestes-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/marestes.png" alt="">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div><div class="seo-slide swiper-slide client-sirius swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">Планета СИРИУС</div>
+                        <div class="sebtitle">Магазин спецодежда одежды</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 1000 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 127%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>8 000</span> до <span>110 000</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 52%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/sirius-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/planeta-sirius/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/sirius-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/sirius.png" alt="">
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="seo-slide swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">Estet men&nbsp;</div>
+                        <div class="sebtitle">Интернет магазин мужской одежды</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 349%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>35 500</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 25%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/logo-desk 1.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/estet-men/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/estet-main.png" alt="">
+
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/estet.png" alt="">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="seo-slide swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">MARESTES</div>
+                        <div class="sebtitle">Магазин морепродуктов</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 154%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>15 500</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 30%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/marestes-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/marestesprive/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/marestes-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/marestes.png" alt="">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="seo-slide swiper-slide client-sirius swiper-slide-next" data-swiper-slide-index="2" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">Планета СИРИУС</div>
+                        <div class="sebtitle">Магазин спецодежда одежды</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 1000 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 127%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>8 000</span> до <span>110 000</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 52%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/sirius-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/planeta-sirius/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/sirius-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/sirius.png" alt="">
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="seo-slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">Estet men&nbsp;</div>
+                        <div class="sebtitle">Интернет магазин мужской одежды</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 349%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>35 500</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 25%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/logo-desk 1.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/este-men/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/estet-main.png" alt="">
+
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/estet.png" alt="">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div><div class="seo-slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 1103.08px; margin-right: 20px;">
+                        <div class="seo-slide--title">MARESTES</div>
+                        <div class="sebtitle">Магазин морепродуктов</div>
+                        <div class="block">
+                            <div class="block__row">
+                                <div class="info">
+                                    <div class="info--items">
+                                        <div class="item">
+                                            Вывели сайт в
+                                            <span>ТОП-10</span>
+                                            более чем по 900 запросам
+                                        </div>
+                                        <div class="item">
+                                            <span>на 154%</span>
+                                            Повысили конверсию
+                                            из поискового трафика
+                                        </div>
+                                        <div class="item">
+                                            Трафик вырос с
+                                            <div><span>100</span> до <span>15 500</span> </div>
+                                            посетителей
+                                        </div>
+                                        <div class="item">
+                                            <span> на 30%</span>
+                                            Увеличили
+                                            рост продаж
+                                        </div>
+                                    </div>
+                                    <div class="info--bottom">
+                                        <div class="logo">
+                                            <img src="/templates/demomarket/img/new-seo/clients/marestes-logo.png" alt="">
+                                        </div>
+                                        <div class="question">
+                                            <div class="text">Смотреть
+                                                &nbsp;Подробнее&nbsp;кейс</div>
+                                            <a href="/cases/marestesprive/">
+                                                Перейти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="img--desctop" src="/templates/demomarket/img/new-seo/clients/marestes-main.png" alt="">
+                                    <div class="img--mobile">
+                                        <img src="/templates/demomarket/img/new-seo/clients/mobile/marestes.png" alt="">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"/>
+                                    </svg>
+
+                            </div>
+                        </a> -->
+                    </div></div>
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="seo-messages">
+        <div class="seo-messages__container aos-init" data-aos="zoom-out-right">
+            <div class="title">
+                <span> БЛАГОДАРСТВЕННЫЕ ПИСЬМА</span>
+            </div>
+            <div class="seo-messages__container__slider swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
+                <div class="seo-messages__container__slider__wrapper swiper-wrapper" style="transform: translate3d(-2000px, 0px, 0px); transition-duration: 0ms;"><div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 1.png" alt="">
+                        </div>
+                        <a href="/cases/tochka_hraneniya/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 2.png" alt="">
+                        </div>
+                        <a href="/cases/estet-men/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div><div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 3.png" alt="">
+                        </div>
+                        <a href="/cases/marestesprive/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 4.png" alt="">
+                        </div>
+                        <a href="/cases/planeta-sirius/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 1.png" alt="">
+                        </div>
+                        <a href="/cases/tochka_hraneniya/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 2.png" alt="">
+                        </div>
+                        <a href="/cases/estet-men/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide" data-swiper-slide-index="2" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 3.png" alt="">
+                        </div>
+                        <a href="/cases/marestesprive/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 4.png" alt="">
+                        </div>
+                        <a href="/cases/planeta-sirius/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 1.png" alt="">
+                        </div>
+                        <a href="/cases/tochka_hraneniya/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div><div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 2.png" alt="">
+                        </div>
+                        <a href="/cases/estet-men/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div><div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 3.png" alt="">
+                        </div>
+                        <a href="/cases/marestesprive/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div><div class="seo-messages__container__slider__wrapper__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="margin-right: 20px;">
+                        <div class="img">
+                            <img src="/templates/demomarket/img/new-seo/rebild/message/A4 - 4.png" alt="">
+                        </div>
+                        <a href="/cases/planeta-sirius/" class="case">
+                            <div class="text">Смотреть кейс</div>
+                            <div class="img">
+                                <svg width="71" height="15" viewBox="0 0 71 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM70.7071 8.20711C71.0976 7.81658 71.0976 7.18342 70.7071 6.79289L64.3431 0.428932C63.9526 0.0384078 63.3195 0.0384078 62.9289 0.428932C62.5384 0.819457 62.5384 1.45262 62.9289 1.84315L68.5858 7.5L62.9289 13.1569C62.5384 13.5474 62.5384 14.1805 62.9289 14.5711C63.3195 14.9616 63.9526 14.9616 64.3431 14.5711L70.7071 8.20711ZM1 8.5H70V6.5H1V8.5Z" fill="#FD6C03"></path>
+                                </svg>
+
+                            </div>
+                        </a>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="seo-check">
+    <div class="seo-check__container container" data-aos="zoom-out-right">
+        <div class="seo-check__head">
+            Чек-лист
+        </div>
+        <div class="seo-check__title">
+            <p><span>197 ШАГОВ</span> ДЛЯ ПРОВЕРКИ SEO-ОПТИМИЗАЦИИ САЙТА</p>
+        </div>
+        <div class="seo-check__row">
+            <div class="seo-check__image">
+                <img src="img/seo-two/check/monitor.png" alt="">
+            </div>
+            <div class="seo-check__column">
+                <div class="seo-check__arrow">
+                    <img src="../../img/seo-two/check/arr.png" alt="">
+                </div>
+                <a href="https://t.me/Web_seoexpert_bot" class="seo-check__button">
+                    Выведи сайт в ТОП-10
+</a>
+                <div class="seo-check__text">
+                    Используйте наш чек-лист, даже если вашим сайтом уже занимаются специалисты. Он поможет вам проверять и оценивать их работу.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="seo-recal">
+        <div class="seo-recal__container aos-init" data-aos="zoom-out-right">
+            <div class="title">
+                Готовы <span>начать?</span>
+            </div>
+            <div class="row">
+                <div class="main">
+                    <div class="subtitle">
+                        <!-- <span class="bolt">Тогда заполните форму</span>, -->
+                        Заполните форму, нажмите кнопку "отправить". Мы с вами свяжемся, проведем <span class="orange">бесплатный аудит</span>  и пришлем рекомендации, что необходимо сделать с сайтом для увеличения продаж.
+                    </div>
+                    <div class="text">
+                        Или позвоните по номеру
+                    </div>
+
+                    <a href="tel:88125091206">+7 (812) 509-12-06</a>
+                    <div class="gifts">
+                        <div class="gifts__row">
+                            <div class="gifts__row__content">
+                                <div class="bolt">
+                                    При оплате за 3 месяца
+                                </div>
+                                <div class="sale">
+                                    СКИДКА 10%
+                                </div>
+                            </div>
+                            <div class="gifts__row__img">
+                                <img src="../..//templates/demomarket/img/new-seo/rebild/gift.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="/udata/content/formSeoFooter/" class="form" method="POST" novalidate>
+                    <div class="inputs">
+                        <label for="" class="label">
+                            <input type="text" name="name" placeholder="Имя">
+                        </label>
+                        <label for="" class="label">
+                            <input type="tel" data-phone-pattern="" name="phone" placeholder="Телефон">
+                        </label>
+                        <label for="" class="label">
+                            <input type="text" name="company" placeholder="Название компании">
+                        </label>
+                        <label for="" class="label">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </label>
+                        <input type="hidden" name="formBlockId" value="Футер форма, сео страница">
+                        <input type="hidden" name="hidden" value="<?= $this->getDomainUrl() ?><?= $urlPage ?>">
+                    </div>
+                    <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                    <button class="form-button">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="seo-form none fadeOut modal-content">
+        <form class="seo-form__container" action="/udata/content/formSeoAudit" method="POST" novalidate>
+            <div class="close">&times;</div>
+            <div class="img">
+                <img src="/templates/demomarket/img/new-seo/rebild/form/gift.png" alt="">
+            </div>
+            <div class="subtitle">
+                Чтобы вы могли оценить, какие слабые места есть у вашего сайта
+                и что мы можем для вас сделать, мы проведем <span>бесплатный аудит сайта</span>
+            </div>
+            <div class="text">
+                Оставьте свои контактные данные и мы свяжемся с вами в течение дня
+            </div>
+            <div class="inputs">
+                <label for="" class="label">
+                    <input type="text" name="company" placeholder="Сылка на ваш сайт">
+                </label>
+                <label for="" class="label">
+                    <input type="text" name="name" placeholder="Имя">
+                </label>
+                <label for="" class="label">
+                    <input type="tel" data-phone-pattern="" name="phone" placeholder="Телефон">
+                </label>
+
+                <label for="" class="label">
+                    <input type="email" name="email" placeholder="E-mail">
+                </label>
+                <!--                <label for="" class="label">-->
+                <input type="hidden" name="formBlockId">
+                <input type="hidden" name="hidden" value="<?= $this->getDomainUrl() ?><?= $urlPage ?>">
+                <!--                </label>-->
+            </div>
+            <button type="submit" class="form-button">
+                Отправить
+            </button>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,189 @@
+.seo-why-two{
+    position: relative;
+    border-radius: 76px 76px 0 0;
+    background-color: #161616;
+    margin-top: -250px;
+    padding-bottom: 190px;
+    z-index: 2;
+    overflow: hidden;
+    background-image: url(../img/seo-two/why/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container{
+        border-radius: 76px 76px 0 0;
+        position: relative;
+        margin: auto;
+        max-width: 1920px;
+        padding-top: 117px;
+        overflow: hidden;
+        &__title{
+            position: relative;
+            text-align: center;
+            color: #fff;
+            z-index: 2;
+            margin-bottom: 79px;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 100px;
+            span{
+                color: #FE964A;
+                font-style: italic;
+            }
+        }
+        &__content{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            .monitor{
+                width: 100%;
+                max-width: 675px;
+            }
+            .description{
+                position: relative;
+                .list{
+                    &__row{
+                        
+                        display: flex;
+                        align-items: center;
+                        gap: 33px;
+                        margin-bottom: 32px;
+                        padding-left: 36px;
+                        &__count{
+                            width: 100%;
+                            max-width: 86px;
+                            height: 86px;
+                            background-color: #FE964A;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            font-size: 40px;
+                            line-height: 52px;
+                            color: #fff;
+                        }
+                        &__text{
+                            font-family: "Evolventa";
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 42px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #E8E8E8;
+                            max-width: 544px;
+                        }
+                    }
+                }
+                .finger{
+                    position: absolute;
+                    width: max-content;
+                    top: 0px;
+                    left: 200px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }   
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .seo-why-two{
+        position: relative;
+        border-radius: 36px 36px 0 0;
+        background-color: #161616;
+        margin-top: 36px;
+        padding-bottom: 42px;
+        z-index: 2;
+        overflow: hidden;
+        background-image: url(../img/seo-two/why/mobile/backround.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__container{
+            border-radius: 36px 36px 0 0;
+            position: relative;
+            margin: auto;
+            max-width: 1920px;
+            padding-top: 50px;
+            &__title{
+                position: relative;
+                text-align: left;
+                color: #fff;
+                z-index: 2;
+                margin-bottom: 79px;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 31px;
+                margin-bottom: 22px;
+                span{
+                    color: #FE964A;
+                    font-style: italic;
+                }
+            }
+            &__content{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+                .monitor{
+                    width: 100%;
+                    max-width: 207px;
+                    align-self: flex-start;
+                    margin-bottom: 66px;
+                }
+                .description{
+                    position: relative;
+                    .list{
+                        &__row{
+                            
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 33px;
+                            margin-bottom: 22px;
+                            padding-left: unset;
+                            &__count{
+                                width: 100%;
+                                max-width: 30px;
+                                height: 30px;
+                                background-color: #FE964A;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #fff;
+                            }
+                            &__text{
+                                font-family: "Evolventa";
+                                font-size: 14px;
+                                font-weight: 700;
+                                line-height: 21px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #E8E8E8;
+                                max-width: 544px;
+                            }
+                        }
+                    }
+                    .finger{
+                        width: 280px;
+                        position: absolute;
+                        top: unset;
+                        left: unset;
+                        bottom: 90%;
+                        height: 280px;
+                        right: -100px;
+                        transform: rotate(300deg);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}
