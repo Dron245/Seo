@@ -344,12 +344,12 @@ export function SwiperInit() {
         }
     })
     const mainSliderOne = new Swiper('.seo-main-two .slider-one', {
-        slidesPerView: 1,
+        slidesPerView: 1.3,
         spaceBetween: 24,
        
     })
     const mainSliderTwo = new Swiper('.seo-main-two .slider-two', {
-        slidesPerView: 1,
+        slidesPerView: 1.3,
         spaceBetween: 20,
     })
     const crewSlider = new Swiper('.crew__slider', {

@@ -42,6 +42,7 @@ try {
     const seo = document.querySelector('.seo-main-two')
     if(seo){
         rowAccardeonFn()
+		//   console.log("test");
     }
 } catch (error) {
     console.log(error)

@@ -29,13 +29,13 @@ export const scss = () => {
                 })
             )
             .pipe(groupCssMediaQueries())
-            .pipe(
-                autoPrefixer({
-                    grid: true,
-                    overrideBrowserslist: ['last 3 version'],
-                    cascade: true
-                })
-            )
+            // .pipe(
+            //     autoPrefixer({
+            //         grid: true,
+            //         overrideBrowserslist: ['last 3 version'],
+            //         cascade: true
+            //     })
+            // )
             //создает не сжатый файл
             .pipe(app.gulp.dest(app.path.build.css))
             .pipe(cleanCss())
