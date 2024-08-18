@@ -52,14 +52,14 @@
 }
 
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .creating-dev__wrap {
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .creating-dev__text p {
         font-weight: var(--font-regular);
     }

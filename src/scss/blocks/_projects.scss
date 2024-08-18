@@ -134,7 +134,7 @@
     }
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .project__wrap {
         grid-template-columns: 1fr;
         row-gap: 30px;
@@ -151,7 +151,7 @@
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .project-main__btn {
         padding: 15px 0;
     }

@@ -229,7 +229,7 @@
     display: block;
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .cost-checkbox__wrap {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -254,7 +254,7 @@
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .cost__subtitle {
         padding-bottom: 40px;
     }
@@ -308,7 +308,7 @@
     }
 }
 
-@media screen and(max-width: 550px) {
+@media screen and (max-width: 550px) {
     .cost-checkbox__wrap {
         display: flex;
         flex-direction: column;

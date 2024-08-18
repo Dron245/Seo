@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and(max-width:1024px) {
+@media screen and (max-width:1024px) {
     .case__title {
         font-size: var(--size-big);
     }
@@ -76,19 +76,19 @@
     }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .case__item {
         gap: 20px;
     }
 }
 
-@media screen and(max-width: 620px) { 
+@media screen and (max-width: 620px) { 
      .case-stats__wrap {
          grid-template-columns: 1fr;
      }
 }
 
-@media screen and(max-width:425px) {
+@media screen and (max-width:425px) {
     .marestes-typography {
         padding-bottom: 0;
     }

@@ -34,7 +34,7 @@
 }
 
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .marketing-info__icon {
         opacity: 1;
 
@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .marketing-info__wrap {
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;

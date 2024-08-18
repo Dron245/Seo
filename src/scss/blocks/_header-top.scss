@@ -269,7 +269,7 @@ width: 100%; /*устанавливаем значение 100% чтобы сс�
 }
 
 
-@media screen and(min-width:1024px) {
+@media screen and (min-width:1024px) {
 
     .header-nav__wrap {
         justify-content: center;
@@ -295,7 +295,7 @@ width: 100%; /*устанавливаем значение 100% чтобы сс�
     }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .header-nav__wrap {
         padding-top: 14%;
     }
@@ -320,7 +320,7 @@ width: 100%; /*устанавливаем значение 100% чтобы сс�
     }
 }
 
-@media screen and(min-width:630px) {
+@media screen and (min-width:630px) {
 
     .header-nav__link {
         font-size: var(--size-big);
@@ -375,13 +375,13 @@ width: 100%; /*устанавливаем значение 100% чтобы сс�
     }
 }
 
-@media screen and(min-width:425px) {
+@media screen and (min-width:425px) {
     .header-nav__wrap {
         padding-top: 15%;
     }
 }
 
-@media screen and(max-width:425px) {
+@media screen and (max-width:425px) {
     .header-top__contaner {
         padding-left: 20px;
         padding-right: 20px;
@@ -427,13 +427,13 @@ width: 100%; /*устанавливаем значение 100% чтобы сс�
     }
 }
 
-@media screen and(max-height: 414px) {
+@media screen and (max-height: 414px) {
     .header-nav__btn {
         bottom: 18%;
     }   
 }
 
-@media screen and(max-height: 450px) {
+@media screen and (max-height: 450px) {
     .header-top__contaner {
         padding-top: 16px;
     }

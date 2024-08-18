@@ -43,7 +43,7 @@
 }
 
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .work-order__icon {
         opacity: 1;
 
@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
     .work-order__item { 
         grid-template-columns: 1fr 2fr;
         align-items: center;
@@ -76,7 +76,7 @@
     }
 }
 
-@media screen and(min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .work-order__item {
         column-gap: 100px;
     }

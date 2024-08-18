@@ -27,7 +27,13 @@
                 position: absolute;
                 left: 120px;
                 top: 80%;
-                
+					 @media (max-width: 1140px){
+						position: relative;
+						display: block;
+
+						// left: initial;
+						// right: 0;
+				 }
             }
             .subtitle{
                 position: absolute;
@@ -41,6 +47,11 @@
                 text-align: left;
                 
                 max-width: 621px;
+					 @media (max-width: 1140px){
+							position: relative;
+							display: block;
+							max-width: 100%;
+					 }
             }
             span{
                 font-size: 42px;
@@ -250,6 +261,7 @@
         display: inline-block;
         width: 20px;
         height: 20px;
+		  flex: 0 0 20px;
         background-color: #fff;
         // border-radius: 4px;
         border-radius: 4px;
@@ -296,21 +308,25 @@
                 .img{
                     position: absolute;
                     left: 0;
-                    top: 42px;
+                    top: 22px;
                     width: 116px;
+						  @media (max-width: 460px){
+							  top: 52px;
+						  }
                 }
                 .subtitle{
                     position: relative;
                     right: 0;
-                    top: 105%;
+                    top: 135%;
                     font-family: "Montserrat";
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 18px;
                     letter-spacing: 0em;
                     text-align: left;
-                    
-                    max-width: 621px;
+                  //   max-width: 621px;
+						margin-top: 40px;
+						 
                 }
                 span{
                 font-size: 16px;
@@ -334,6 +350,7 @@
                 align-items: center;
                 margin-bottom: 12px;
                 .block{
+						background-color: initial;
                     &__title{
                     font-size: 14px;
                     font-weight: 700;
@@ -391,11 +408,12 @@
                 padding-bottom: 36px;
                 &__img{
                     flex: 1;
-                    width: 248px;
+                    width: initial;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     margin-top: -100px;
+						  
                 }
                 &__content{
                     flex: 1;
@@ -459,8 +477,18 @@
                             color: #161616;
                         }
                     }
+						  &__input {
+							&::placeholder {
+								font-size: 16px;
+								@media (max-width:460px){
+									  font-size: 14px;
+								}
+							}
+						}
                 }
             }
+
+				
         }
     }
     .label-checkbox{

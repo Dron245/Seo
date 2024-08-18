@@ -69,7 +69,7 @@
 .consult-card__subtitle {}
 
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .consult__wrap {
         grid-template-columns: 1fr;
         row-gap: 40px;
@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and(min-width:425px) {
+@media screen and (min-width:425px) {
     .consult-card {
         row-gap: 30px;
     }
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and(max-width:425px) {
+@media screen and (max-width:425px) {
     .consult__btn {
         padding: 16px 22px;
     }

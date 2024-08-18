@@ -35,7 +35,7 @@
     left: 138px;
 }
 
-@media screen and(min-width:425px) {
+@media screen and (min-width:425px) {
     .case-phone__images {
         height: 250px;
     }
@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and(min-width:520px) {
+@media screen and (min-width:520px) {
     .case-phone__images {
         height: 330px;
     }
@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .case-phone__wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and(min-width:1024px) {
+@media screen and (min-width:1024px) {
     .case-phone__wrap {
         gap: 170px;
     }
@@ -102,7 +102,7 @@
     }
 }
 
-@media screen and(min-width:1260px) {
+@media screen and (min-width:1260px) {
     .case-phone__img {
         width: 235px;
     }

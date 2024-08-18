@@ -88,7 +88,7 @@
     margin: 0;
 }
 
-@media screen and(min-width:425px) {
+@media screen and (min-width:425px) {
 
     .case-typography__btns,
     .case-typography__weight {
@@ -106,7 +106,7 @@
     }
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .case-typography__card {
         align-items: center;
         grid-template-columns: 1fr 1fr;
@@ -123,14 +123,14 @@
     }
 }
 
-@media screen and(min-width:1140px) { 
+@media screen and (min-width:1140px) { 
     .case-typography__color {
         width: 90px;
         height: 90px;
     }
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .case-typography__main {
         display: none;
     }

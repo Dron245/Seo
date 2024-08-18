@@ -1,4 +1,4 @@
-import dartSass from 'sass'
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass'
 import rename from 'gulp-rename'
 
@@ -23,28 +23,25 @@ export const scss = () => {
                 )
             )
             .pipe(app.plugins.replace(/@img\//g, '../img/'))
-            .pipe(
-                sass({
-                    outputStyle: 'expanded'
-                })
-            )
-            .pipe(groupCssMediaQueries())
+            // .pipe(sass({ outputStyle: 'compressed'}))
+            .pipe(sass({ outputStyle: 'expanded'}))
             // .pipe(
-            //     autoPrefixer({
-            //         grid: true,
-            //         overrideBrowserslist: ['last 3 version'],
-            //         cascade: true
-            //     })
-            // )
-            //создает не сжатый файл
-            .pipe(app.gulp.dest(app.path.build.css))
-            .pipe(cleanCss())
-            .pipe(
+					//     autoPrefixer({
+						//         grid: true,
+						//         overrideBrowserslist: ['last 3 version'],
+						//         cascade: true
+						//     })
+						// )
+						//создает не сжатый файл
+						// .pipe(groupCssMediaQueries())
+						.pipe(app.gulp.dest(app.path.build.css))
+						.pipe(cleanCss())
+						.pipe(
                 rename({
                     extname: '.min.css'
                 })
             )
-            .pipe(app.gulp.dest(app.path.build.css))
+				.pipe(app.gulp.dest(app.path.build.css, {sourcemaps: '.' }))
             .pipe(app.plugins.browserSync.stream())
     )
 }

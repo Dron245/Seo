@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     .header__title {
         padding-bottom: 5%;
@@ -79,7 +79,7 @@
 }
 
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
 
     .header__title {
         padding-bottom: 5%;
@@ -103,7 +103,7 @@
     }
 }
 
-@media screen and(max-width:425px) {
+@media screen and (max-width:425px) {
     .header__bottom {
         bottom: -13%;
     }
@@ -117,7 +117,7 @@
 
 // медиа запрос для разрешений по вертикали
 
-@media screen and(max-height: 460px) {
+@media screen and (max-height: 460px) {
 
     .header__bottom {
         // bottom: -7%;
@@ -129,7 +129,7 @@
 }
 
 
-@media screen and(max-height: 375px) {
+@media screen and (max-height: 375px) {
     .header__bottom {
         bottom: -5%;
     }
@@ -143,7 +143,7 @@
     }
 }
 
-@media screen and(max-height: 360px) {
+@media screen and (max-height: 360px) {
 
     .header__wrap {
         row-gap: 1em;

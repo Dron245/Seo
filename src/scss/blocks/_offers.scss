@@ -54,7 +54,7 @@
     transition: all 0.2s ease-in;
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .offers__wrap {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
@@ -66,7 +66,7 @@
     }
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
 
     .offers__subtitle {
         width: 90%;
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and(max-width:425px) {
+@media screen and (max-width:425px) {
     .offers__subtitle {
         width: 90%;
     }
