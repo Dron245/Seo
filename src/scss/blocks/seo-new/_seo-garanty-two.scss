@@ -5,6 +5,12 @@
         padding-top: 70px;
         padding-bottom: 200px;
         overflow: hidden;
+		  .seo-audit-two__container__form__content__button {
+			margin: 100px auto 0 auto;
+			@media (max-width: 767.98px){
+				  margin-top: 30px;
+			}
+		  }
         &__title {
             font-family: "Evolventa";
             font-size: 60px;

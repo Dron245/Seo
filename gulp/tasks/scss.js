@@ -14,14 +14,14 @@ export const scss = () => {
             .src(app.path.src.scss, {
                 sourcemaps: true
             })
-            .pipe(
-                app.plugins.plumber(
-                    app.plugins.notify.onError({
-                        title: 'SCSS',
-                        message: 'Error: <%= error.message %>'
-                    })
-                )
-            )
+            // .pipe(
+            //     app.plugins.plumber(
+            //         app.plugins.notify.onError({
+            //             title: 'SCSS',
+            //             message: 'Error: <%= error.message %>'
+            //         })
+            //     )
+            // )
             .pipe(app.plugins.replace(/@img\//g, '../img/'))
             // .pipe(sass({ outputStyle: 'compressed'}))
             .pipe(sass({ outputStyle: 'expanded'}))
