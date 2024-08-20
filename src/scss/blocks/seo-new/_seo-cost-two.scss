@@ -4,6 +4,7 @@
     padding-bottom: 206px;
     margin-top: -76px;
     overflow: hidden;
+	 padding-inline: 20px;
     &__container{
         padding-top: 76px;
         max-width: 1610px;
@@ -53,6 +54,10 @@
             max-width: 1360px;
             row-gap: 78px;
             margin: auto;
+				@media (min-width:767.98px){
+					  display: grid;
+					  grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+				}
             .block{
                 width: 393px;
                 background-color: #292929;
@@ -63,6 +68,9 @@
                 gap: 16px;
                 padding: 44px 20px;
                 // padding-top: 44px;
+					 @media (min-width:767.98px){
+						width: initial;
+				 }
                 &--img{
                     display: flex;
                     align-items: center;
@@ -106,6 +114,7 @@
                     p{
                         font-size: 26px;
                         font-weight: 500;
+								line-height: 1.5;
                     }
                     span{
                         font-weight: 500;
@@ -117,6 +126,7 @@
                     max-width: 336px;
                     margin: auto;
                     text-align: center;
+						  line-height: 1.4;
                     span{
                         font-family: "Montserrat";
                         font-size: 20px;
@@ -165,7 +175,7 @@
         padding-bottom: 106px;
         margin-top: -36px;
         &__container{
-            padding: 55px 20px 0;
+            padding-top: 55px;
             overflow: hidden;
             .title{
                 font-family: "Evolventa";
@@ -200,7 +210,7 @@
             }
             .cost-slider{
                 position: relative;
-                height: 860px;
+               //  height: 860px;
                 .row{
                     display: flex;
                     flex-wrap: nowrap;
@@ -317,10 +327,12 @@
                     }
                 }
                 .swiper-pagination{
+						 position: relative;
                     width: 100%;
-                    height: 10px;
-                    position: absolute;
-                    bottom: 10px;
+						  margin-top: 50px;
+                  //   height: 10px;
+                  //   position: absolute;
+                  //   bottom: 10px;
                 }
             }
           

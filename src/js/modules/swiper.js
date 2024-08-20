@@ -21,15 +21,18 @@ export function swiperFn() {
         pagination: {
             el: '.swiper-pagination'
         },
+		//   autoplay: {
+		// 	delay: 2500,
+		//   },
+		loop: true,
         breakpoints: {
             1024: {
-                slidesPerView: 1,
+                slidesPerView: 1.35,
                 spaceBetween: 20,   
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
+               //  autoplay: {
+               //      delay: 2500,
+               //      disableOnInteraction: false,
+               //  },
             },
         }
     });
