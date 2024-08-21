@@ -7,12 +7,11 @@
     overflow: hidden;
     padding-bottom: 200px;
     &__container{
+		 max-width: 1280px;
         padding-top: 130px;
         overflow: hidden;
         padding-bottom: 150px;
         &__title{
-            margin-bottom: 45px;
-            margin: auto;
             font-family: "Evolventa";
             position: relative;         
             font-size: 42px;
@@ -20,8 +19,7 @@
             line-height: 65px;
             letter-spacing: 0em;
             text-align: center;  
-            margin-bottom: 100px;   
-            // max-width: 620px;
+            margin-bottom: 140px;   
           
             .img{
                 position: absolute;
@@ -68,10 +66,9 @@
             flex-wrap: wrap;
             gap: 40px;
             width: 100%;
-            margin-bottom: 40px;
+				margin-top: 40px;
+            // margin-bottom: 40px;
             .block{
-                background-color: #D9D9D9;
-                padding: 26px;
                 width: 100%;
                 box-sizing: border-box;
                //  max-width: calc(50% - 20px);
@@ -84,16 +81,15 @@
                 line-height: 26px;
                 letter-spacing: 0em;
                 text-align: left;  
-                margin-bottom: 12px;
-                color: var(--color-orange);
+                margin-bottom: 30px;
+                color: #161616;
                 } 
                 &__list{
-                    padding-left: 36px;
+                  //   padding-left: 36px;
                     display: flex;
                     // flex-direction: column;
-                    gap: 48px;
-                    gap: 95px;
-                    margin-bottom: 79px;
+                  //   gap: 18px;
+                  //   gap: 95px;
                     margin-bottom: 93px;
                     span{
                         font-weight: 600;
@@ -103,10 +99,13 @@
                         font-size: 18px;
                         line-height: 27px;
                         color: #303030;
-                        list-style-image: url(../img/new-seo/rebild/Vector.svg);
-                        &::marker{
-                            margin-right: 20px;
-                        }
+								padding-left: 50px;
+								background: url('../img/new-seo/rebild/Vector.svg') 0px 0 no-repeat;
+                        // list-style-image: url(../img/new-seo/rebild/Vector.svg);
+									 @media (max-width: 459.98px){
+										padding-left: 32px;
+										// background-size: 22px;
+									 }
                     }
                 }
                 .button{
@@ -139,6 +138,7 @@
             height: 432px;
             background-color: #D9D9D9;
             border-radius: 22px;
+				padding-inline: 10px;
             background-image: url(../img/seo-two/audit/webenergy.png);
             background-repeat: no-repeat;
             background-position: 10px 100%;
@@ -298,7 +298,7 @@
         padding-bottom: 0;
 
         &__container{
-            padding-top: 76px;
+            padding-top: 50px;
             padding-bottom: 0;
             &__title{
                 margin-bottom: 45px;
@@ -360,7 +360,7 @@
                     margin-bottom: 19px;
                     } 
                     &__list{
-                        padding-left: 42px;
+                        // padding-left: 42px;
                         display: flex;
                         flex-direction: column;
                         gap: 9px;
@@ -369,7 +369,7 @@
                             font-size: 14px;
                             line-height: 21px;
                             color: #303030;
-                            list-style-image: url(../img/new-seo/rebild/Vector.svg);
+                           //  list-style-image: url(../img/new-seo/rebild/Vector.svg);
                         }
                     }
                     .button{

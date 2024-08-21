@@ -92,6 +92,9 @@
                 text-align: left;
                 margin-bottom: 42px;
                 word-wrap: break-word;
+					 @media (max-width: 459.98px){
+						  font-size: 24px;
+					 }
                 span{
                     font-style: italic;
                     color: #fff;

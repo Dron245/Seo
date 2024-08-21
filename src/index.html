@@ -5,31 +5,37 @@
 })
 
 <body>
-    <!-- @@include('html/header-top-new.html', {}) -->
-    <main class="creating">
-        @@include('html/seo-new/seo-main-two.html', {})
-        <!-- @@include('html/seo-new/seo-feedback.html', {}) -->
-        @@include('html/seo-new/seo-audit-two.html', {})
-        @@include('html/seo-new/seo-why-two.html', {})
-        <!-- @@include('html/seo-new/seo-order.html', {}) -->
-        <!-- @@include('html/seo-new/seo-optimisation.html', {}) -->
-        <!-- @@include('html/seo-new/seo-crew.html', {}) -->
-        <!-- @@include('html/seo-new/seo-profit.html', {}) -->
-        @@include('html/seo-new/seo-term-two.html', {})
-        @@include('html/seo-new/seo-garanty-two.html', {})
-        <!-- @@include('html/seo-new/seo-cost.html', {}) -->
-        @@include('html/seo-new/seo-cost-two.html', {})
-        @@include('html/seo-new/seo-niche-two.html', {})
-        @@include('html/seo-new/seo-clients.html', {})
-        <!-- @@include('html/seo-new/seo-messages.html', {}) -->
-        @@include('html/seo-new/seo-messages-two.html', {})
-        @@include('html/seo-new/seo-check.html', {})
-        <!-- @@include('html/seo-new/seo-questions.html', {}) -->
-        @@include('html/seo-new/seo-recal.html', {})
-        <!-- @@include('html/seo-new/seo-form.html', {}) -->
-
+    @@include('html/landing/header-landing.html', {})
+    <main>
+        <!-- <section class="section-padding-70 container landing-text black">
+            <p>
+                Не просто <span class="text--focus">САЙТ</span>, а продающий <span class="text--focus">МАРКЕТИНГ</span> <br>
+                Подбираем эффективные <span class="text--focus">ИНСТРУМЕНТЫ DIGITAL МАРКЕТИНГА.</span> <br>
+                <span class="text--focus">завалим заявками,</span> будьте готовы!
+            </p>
+        </section> -->
+        @@include('html/new-main/swap.html')
+        @@include('html/new-main/skills.html')
+        @@include('html/landing/landing-digital.html')
+        <!-- @@include('html/landing/digital-text.html', {}) -->
+        <!-- <section class="section-padding-70 container landing-text black">
+            <p>
+               Вы - <span class="text--focus">владелец бизнеса</span> и горите своим делом? Имеете <span
+                   class="text--focus">какую-то прибыль,</span>
+               но не знаете как <span class="text--focus">развиваться</span> дальше?
+               Не понимаете в какие инструменты <span class="text--focus">маркетинга</span> вкладывать и как это <span class="text--focus">контролировать?</span>
+            </p>
+        </section> -->
+        <!-- @@include('html/landing/landing-mount.html') -->
+        @@include('html/new-main/facts.html')
+        @@include('html/new-main/analiz.html')
+        @@include('html/landing/landing-case.html')
+        <!-- @@include('html/landing/landing-tabs.html') -->
+        @@include('html/contact.html', {})
+        <!-- @@include('html/map.html', {}) -->
+        @@include('html/feedback.html', {})
     </main>
-    <!-- @@include('html/footer.html', {}) -->
+    @@include('html/footer.html', {})
     <script src="js/app.min.js"></script>
 </body>
 

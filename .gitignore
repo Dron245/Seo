@@ -7,10 +7,10 @@
 
 # testing
 /coverage
-/lasts_src
 # production
 /build
 /dist
+*.zip
 /src/dist
 # misc
 /.idea

@@ -34,18 +34,19 @@
         }
         .column{
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            align-items: stretch;
+				justify-content: flex-start;
             flex-direction: column;
             margin: auto;
             max-width: 1240px;
             gap: 60px;
 				@media (min-width:767.98px){
+					display: grid;
 					padding-inline: 20px;
 					  
 				}
             & >:nth-child(1){
-                margin-right: auto;
+               //  margin-right: auto;
                 .block{
                     max-width: 952px;
                     box-sizing: border-box;
@@ -56,9 +57,9 @@
                 }
             }
             & >:nth-child(2)[class]{
-                margin-left: auto;
-					 @media (max-width: 1075px) and (min-width: 767.98){
-						 justify-content: flex-end;
+               //  margin-left: auto;
+					 @media (max-width: 1075px) and (min-width: 767.98px){
+						 justify-self: flex-end;
 					 }
                 .block{
                     max-width: 849px;
@@ -70,7 +71,7 @@
                 }
             }
             & >:nth-child(3){
-                margin-left: auto;
+               //  margin-left: auto;
                 .block{
                     max-width: 863px;
                     box-sizing: border-box;
@@ -84,7 +85,7 @@
        
             .row{
                 display: flex;
-					 width: 100%;
+					//  width: 100%;
 					 justify-content: space-between;
                //  gap: 48px;
 					.img {
@@ -120,6 +121,7 @@
                         text-align: left;
                         color: #FE964A;
                         margin-bottom: 10px;
+								margin-top: auto;
                     }
                     &--content{
                         font-size: 18px;
@@ -171,6 +173,9 @@
                //  text-align: left;
                 font-size: 36px;
                 margin-bottom: 20px;
+					 @media (max-width: 459.98px){
+						  font-size: 24px;
+					 }
                 span{
                     font-style: italic;
                     color: var(--color-orange);
@@ -179,7 +184,7 @@
             .column{
                 flex-direction: row;
                 margin: auto;
-                align-items: flex-start;
+               //  align-items: flex-start;
                 gap: 20px;
                 .row{
                     width: 100% !important;
@@ -189,6 +194,7 @@
                     // justify-content: flex-start;
                     flex-direction: column;
                     // gap: 20px;
+						  height: auto;
                     .img{
                         display: none;
                     }
@@ -198,6 +204,9 @@
                         background-color: #292929;
                         border-radius: 40px;
                         padding: 8px 20px 20px;
+								height: 100%;
+								display: flex;
+								flex-direction: column;
                         &--title{
                             width: 100%;
                             font-size: 28px;
