@@ -223,6 +223,9 @@ h6 {
   line-height: 1;
   text-transform: uppercase
 }
+.AndreyP .about__title {
+	padding-bottom: initial;
+}
 .AndreyP .marestes .title {
   color: #eb5757
 }
@@ -247,6 +250,11 @@ h6 {
 }
 .AndreyP .item-list:not(:last-child) {
   margin-bottom: 1.25rem
+}
+.AndreyP .header[class] {
+	background-image: initial;
+		height: initial;
+		display: initial;
 }
 .AndreyP .header__container {
   padding-top: 5rem;
@@ -302,6 +310,9 @@ h6 {
   right: 6.712%;
   bottom: 32%;
   width: 11.25rem
+}
+.AndreyP .about {
+	background-color: initial;
 }
 .AndreyP .about__title {
   margin-bottom: 1.875rem
@@ -494,6 +505,9 @@ h6 {
 .AndreyP .options__container {
   padding-bottom: 3%;
   position: relative
+}
+.AndreyP .swiper-slide {
+	width: initial;
 }
 .AndreyP .options__img {
   border-radius: .6875rem;

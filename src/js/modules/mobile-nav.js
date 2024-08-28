@@ -36,5 +36,5 @@ export function mobileNav(className) {
         }
     };
 
-    navBtn.addEventListener('click', clickMenuHandler);
+    navBtn ? navBtn.addEventListener('click', clickMenuHandler) : null;
 }

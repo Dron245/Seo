@@ -300,33 +300,33 @@ export function SwiperInit() {
 		new Swiper('.sirius__slider', { 
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 'auto',
+			spaceBetween: 15,
 			speed: 800,
-
-			breakpoints: {
-				300: {
-					slidesPerView: 1.4,
-					spaceBetween: 15,
-					loop: true,
-				},
+			loop:true,
+			// breakpoints: {
+			// 	300: {
+			// 		slidesPerView: 1.4,
+			// 		spaceBetween: 15,
+			// 		loop: true,
+			// 	},
 			
-				468: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-					loop: true,
-				},
-				992: {
-					slidesPerView: 4,
-					spaceBetween: 20,
-					loop: true,
-					// autoHeight:true
-				},
-				1268: {
-					slidesPerView: 5,
-					spaceBetween: 20,
-				},
-			},
+			// 	468: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 20,
+			// 		loop: true,
+			// 	},
+			// 	992: {
+			// 		slidesPerView: 4,
+			// 		spaceBetween: 20,
+			// 		loop: true,
+			// 		// autoHeight:true
+			// 	},
+			// 	1268: {
+			// 		slidesPerView: 5,
+			// 		spaceBetween: 20,
+			// 	},
+			// },
 		});
 	}
     const grid1Swiper = new Swiper('.skills__grid_1_swiper', {
